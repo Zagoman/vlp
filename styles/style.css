@@ -1,0 +1,23 @@
+/* ! Video Interaction on Hero */
+#entry-video {
+  width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+}
+.button-next {
+  position: absolute;
+  inset: 50vh 1rem auto auto;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 200px;
+  height: 80px;
+}
+.button-prev {
+  position: absolute;
+  inset: 50vh auto auto 1rem;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 200px;
+  height: 80px;
+}
+/* ! End of Video Interaction on Hero */
