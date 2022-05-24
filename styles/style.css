@@ -1,6 +1,6 @@
-/* !entry styles */
+/* ?entry styles */
 :root {
-  /* ?typography */
+  /* !typography */
   --font-xsmall: 0.8em;
   --font-small: 1em;
   --font-medium: 1.25em;
@@ -10,12 +10,12 @@
   --font-3xlarge: 3.052em;
   --font-largest: 3.052em;
 
-  /* ?colors */
+  /* !colors */
   --color-primary: #000;
   --color-secondary: #000;
   --color-accent: #000;
 
-  /* ?spacings */
+  /* !spacings */
   --spacing-xsmall: 1em;
   --spacing-small: 1em;
   --spacing-medium: 1em;
@@ -36,7 +36,7 @@ img {
 
 @media only screen and (min-width: 800px) {
   :root {
-    /* ?typography */
+    /* !typography */
     --font-xsmall: 0.75em;
     --font-small: 1em;
     --font-medium: 1.333em;
@@ -45,7 +45,7 @@ img {
     --font-xxlarge: 3.157em;
     --font-largest: 4.209em;
 
-    /* ?spacings */
+    /* !spacings */
     --spacing-xsmall: 1em;
     --spacing-small: 1em;
     --spacing-medium: 1em;
@@ -57,8 +57,8 @@ img {
     font-size: 1rem;
   }
 }
-/* !end of entry styles */
-/* !Typography */
+/* ?end of entry styles */
+/* ?Typography */
 /* fs stands for font-size */
 .fs_xsmall {
   font-size: var(--font-xsmall);
@@ -92,4 +92,27 @@ img {
   font-size: var(--font-largest);
   line-height: 1;
 }
-/* !end of Typography */
+/* ?end of Typography */
+/* ?Video Interaction on Hero */
+#entry-video {
+  width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+}
+.button-next {
+  position: absolute;
+  inset: 50vh 1rem auto auto;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 200px;
+  height: 80px;
+}
+.button-prev {
+  position: absolute;
+  inset: 50vh auto auto 1rem;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 200px;
+  height: 80px;
+}
+/* ?End of Video Interaction on Hero */
