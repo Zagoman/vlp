@@ -54,26 +54,34 @@ body {
 /* fs stands for font-size */
 .fs_xsmall {
   font-size: var(--font-xsmall);
+  line-height: 1.4;
 }
 .fs_small {
   font-size: var(--font-small);
+  line-height: 1.4;
 }
 .fs_medium {
   font-size: var(--font-medium);
+  line-height: 1.3;
 }
 .fs_large {
   font-size: var(--font-large);
+  line-height: 1.1;
 }
 .fs_xlarge {
   font-size: var(--font-xlarge);
+  line-height: 1.1;
 }
 .fs_xxlarge {
   font-size: var(--font-xxlarge);
+  line-height: 1;
 }
 .fs_3xlarge {
   font-size: var(--font-3xlarge);
+  line-height: 1;
 }
 .fs_largest {
   font-size: var(--font-largest);
+  line-height: 1;
 }
 /* !end of Typography */
