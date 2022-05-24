@@ -7,6 +7,7 @@
   --font-large: 1.563em;
   --font-xlarge: 1.953em;
   --font-xxlarge: 2.441em;
+  --font-3xlarge: 3.052em;
   --font-largest: 3.052em;
 
   /* ?colors */
@@ -49,3 +50,30 @@ body {
   }
 }
 /* !end of entry styles */
+/* !Typography */
+/* fs stands for font-size */
+.fs_xsmall {
+  font-size: var(--font-xsmall);
+}
+.fs_small {
+  font-size: var(--font-small);
+}
+.fs_medium {
+  font-size: var(--font-medium);
+}
+.fs_large {
+  font-size: var(--font-large);
+}
+.fs_xlarge {
+  font-size: var(--font-xlarge);
+}
+.fs_xxlarge {
+  font-size: var(--font-xxlarge);
+}
+.fs_3xlarge {
+  font-size: var(--font-3xlarge);
+}
+.fs_largest {
+  font-size: var(--font-largest);
+}
+/* !end of Typography */
