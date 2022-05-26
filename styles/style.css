@@ -12,7 +12,7 @@
 
   /* !colors */
   --color-primary: #000;
-  --color-secondary: #000;
+  --color-secondary: #fff;
   --color-accent: #000;
 
   /* !spacings */
@@ -99,20 +99,29 @@ img {
   max-height: 100vh;
   object-fit: cover;
 }
+.button-prev:hover,
+.button-next:hover {
+  color: var(--color-secondary);
+}
+.button-prev,
 .button-next {
   position: absolute;
-  inset: 50vh 1rem auto auto;
-  transform: translateY(-50%);
+  color: var(--color-primary);
+  background: none;
+  border: none;
   z-index: 10;
-  width: 200px;
-  height: 80px;
+  transform: translateY(-50%);
+  transition: color 300ms ease-in-out;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.button-next {
+  inset: 50vh 1rem auto auto;
 }
 .button-prev {
-  position: absolute;
   inset: 50vh auto auto 1rem;
-  transform: translateY(-50%);
-  z-index: 10;
-  width: 200px;
-  height: 80px;
 }
 /* ?End of Video Interaction on Hero */
+/* ?Hero Section */
+
+/* ?End of Hero Section */
