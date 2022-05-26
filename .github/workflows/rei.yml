@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - main
-name: 🚀 Deploy website on push (Hubert)
+name: 🚀 Deploy website on push (Rei)
 jobs:
   web-deploy:
     name: 🎉 Deploy Rei's
