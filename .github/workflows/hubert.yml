@@ -2,10 +2,10 @@ on:
   push:
     branches:
       - main
-name: 🚀 Deploy website on push
+name: 🚀 Deploy website on push (Hubert)
 jobs:
   web-deploy:
-    name: 🎉 Deploy Panni's
+    name: 🎉 Deploy Hubert's
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
@@ -14,7 +14,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
-          server: linux2.unoeuro.com
+          server: linux166.unoeuro.com
           server-dir: ./public_html/vlp-website/
-          username: themotelmellow.com
-          password: ${{ secrets.PANNI_FTP_PASSWORD }}
+          username: hubkur.dk
+          password: ${{ secrets.HUBERT_FTP_PASSWORD }}
