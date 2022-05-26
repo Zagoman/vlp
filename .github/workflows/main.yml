@@ -5,58 +5,58 @@ on:
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: 🎉 Deploy Panni's
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
-      with:
-        server: linux2.unoeuro.com
-        server-dir: ./public_html/vlp-website
-        username: themotelmellow.com
-        password: ${{ secrets.PANNI_FTP_PASSWORD }}
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
-      with:
-        server: linux104.unoeuro.com
-        server-dir: ./public_html/vlp-website
-        username: lucaszago.dk
-        password: ${{ secrets.LUCAS_FTP_PASSWORD }}
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
-      with:
-        server: linux166.unoeuro.com
-        server-dir: ./public_html/vlp-website
-        username: hubkur.dk
-        password: ${{ secrets.HUBERT_FTP_PASSWORD }}
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
-      with:
-        server: ftp.mediarei.com
-        server-dir: ./customers/3/d/7/mediarei.com/httpd.www/vlp-website
-        username: mediarei.com
-        password: ${{ secrets.REI_FTP_PASSWORD }}
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        with:
+          server: linux2.unoeuro.com
+          server-dir: ./public_html/vlp-website
+          username: themotelmellow.com
+          password: ${{ secrets.PANNI_FTP_PASSWORD }}
+  # web-deploy:
+  #   name: 🎉 Deploy Lucas'
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: 🚚 Get latest code
+  #     uses: actions/checkout@v2
+
+  #   - name: 📂 Sync files
+  #     uses: SamKirkland/FTP-Deploy-Action@4.2.0
+  #     with:
+  #       server: linux104.unoeuro.com
+  #       server-dir: ./public_html/vlp-website
+  #       username: lucaszago.dk
+  #       password: ${{ secrets.LUCAS_FTP_PASSWORD }}
+  # web-deploy:
+  #   name: 🎉 Deploy Hubert's
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: 🚚 Get latest code
+  #     uses: actions/checkout@v2
+
+  #   - name: 📂 Sync files
+  #     uses: SamKirkland/FTP-Deploy-Action@4.2.0
+  #     with:
+  #       server: linux166.unoeuro.com
+  #       server-dir: ./public_html/vlp-website
+  #       username: hubkur.dk
+  #       password: ${{ secrets.HUBERT_FTP_PASSWORD }}
+  # web-deploy:
+  #   name: 🎉 Deploy Rei's
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: 🚚 Get latest code
+  #     uses: actions/checkout@v2
+
+  #   - name: 📂 Sync files
+  #     uses: SamKirkland/FTP-Deploy-Action@4.2.0
+  #     with:
+  #       server: ftp.mediarei.com
+  #       server-dir: ./customers/3/d/7/mediarei.com/httpd.www/vlp-website
+  #       username: mediarei.com
+  #       password: ${{ secrets.REI_FTP_PASSWORD }}
