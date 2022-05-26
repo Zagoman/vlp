@@ -130,3 +130,40 @@ img {
   padding: 1rem 3rem;
 }
 /* ?End of Hero Section */
+
+/* ?beginning of footer */
+
+footer {
+  text-align: center;
+}
+.footer-logo img {
+  width: 200px;
+  height: 200px;
+}
+#footer-nav-bar a {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+#footer-location {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#footer-address {
+  font-size: var(--font-small);
+}
+#footer-cvr {
+  font-size: var(--font-xsmall);
+}
+#footer-SoMe {
+  display: flex;
+  justify-content: center;
+}
+.footer-SoMe-container {
+  display: flex;
+  gap: 1rem;
+}
+.footer-SoMe-container img {
+  width: 2em;
+}
+/* ?end of footer */
