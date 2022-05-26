@@ -15,6 +15,6 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
           server: ftp.mediarei.com
-          server-dir: ./customers/3/d/7/mediarei.com/httpd.www/vlp-website/
+          server-dir: ./vlp-website/
           username: mediarei.com
           password: ${{ secrets.REI_FTP_PASSWORD }}
