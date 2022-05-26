@@ -143,13 +143,13 @@ footer {
 #footer-cvr {
   font-size: var(--font-xsmall);
 }
-
+#footer-SoMe {
+  display: flex;
+  justify-content: center;
+}
 .footer-SoMe-container {
   display: flex;
-  grid-template-columns: 1fr 1fr;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
+  gap: 1rem;
 }
 .footer-SoMe-container img {
   width: 2em;
