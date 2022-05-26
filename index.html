@@ -6,31 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vi Lever På Polsk</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/js/splide.min.js"></script>
   </head>
   <body>
-    <video autoplay muted loop id="entry-video">
-      <source src="media/0_sequence.mp4" type="video/mp4" />
-      Sorry, your browser doesn't support embedded videos.
-    </video>
-    <button class="button-next">Click here to next</button>
-    <button class="button-prev">Click here to prev</button>
+    <header></header>
+    <main>
+      <video autoplay muted loop id="entry-video">
+        <source src="media/0_sequence.mp4" type="video/mp4" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <button class="button-next">Click here to next</button>
+      <button class="button-prev">Click here to prev</button>
+      <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Slide 01</li>
+            <li class="splide__slide">Slide 02</li>
+            <li class="splide__slide">Slide 03</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
     <script src="video-sequence.js"></script>
   </body>
-  <footer>
-    <div class="container">
-      <a href="#">Logo</a>
-      <p>Vi Lever På Polsk</p>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li></li>
-          <li>link 1</li>
-          <li>link 2</li>
-          <li>link 1</li>
-          <li>link 2</li>
-          ...
-        </ul>
-      </nav>
-    </div>
-  </footer>
 </html>
