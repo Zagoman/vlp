@@ -15,23 +15,80 @@
   <body>
     <header></header>
     <main>
-      <video autoplay muted loop id="entry-video">
-        <source src="media/0_sequence.mp4" type="video/mp4" />
-        Sorry, your browser doesn't support embedded videos.
-      </video>
-      <button class="button-next">Click here to next</button>
-      <button class="button-prev">Click here to prev</button>
-      <section class="splide" aria-label="Splide Basic HTML Example">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">Slide 01</li>
-            <li class="splide__slide">Slide 02</li>
-            <li class="splide__slide">Slide 03</li>
-          </ul>
-        </div>
+      <section class="hero-section">
+        <video autoplay muted loop id="entry-video">
+          <source src="media/0_sequence.mp4" type="video/mp4" />
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+        <button class="button-next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            fill="currentColor"
+            class="bi bi-arrow-right-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+            />
+          </svg>
+        </button>
+        <button class="button-prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            fill="currentColor"
+            class="bi bi-arrow-left-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+            />
+          </svg>
+        </button>
+        <button class="button-enter">enter the gallery</button>
       </section>
     </main>
-
+    <footer>
+  
+      <div class="footer-logo">
+        <a href="#">
+          <img alt="Logo" src="/media/logo_1.png"></a>
+  
+      </div>
+        <nav>
+          <ul id="footer-nav-bar">
+            <a href="#">Home</a>
+            <a href="#">Exhibitions</a>
+            <a href="#">About</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+          </ul>
+        </nav>
+        <div id="footer-location">
+          <p id="footer-address">Eliasgade 10, 2300 Copenhagen</p>
+          <p id="footer-cvr">CVR: 12345678</p>
+        </div>
+        <div id="footer-SoMe">
+          <div>
+          <div class="footer-SoMe-container">
+            <img src="/media/logo_1.png" alt="logo of Facebook" />
+            <p>Follow us on <a href="#">Facebook</a></p>
+          </div>
+          <div class="footer-SoMe-container">
+            <img src="/media/logo_1.png" alt="logo of Instagram" />
+            <p>Follow us on <a href="#">Instagram</a></p>
+          </div>
+          <div class="footer-SoMe-container">
+            <img src="/media/logo_1.png" alt="logo of a letter" />
+            <p>Sign up to the <a href="#">Newsletter</a></p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </footer>
     <script src="video-sequence.js"></script>
   </body>
 </html>
