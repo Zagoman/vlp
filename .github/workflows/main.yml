@@ -15,7 +15,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
           server: linux2.unoeuro.com
-          server-dir: ./public_html/vlp-website
+          server-dir: ./public_html/vlp-website/
           username: themotelmellow.com
           password: ${{ secrets.PANNI_FTP_PASSWORD }}
   # web-deploy:
@@ -29,7 +29,7 @@ jobs:
   #     uses: SamKirkland/FTP-Deploy-Action@4.2.0
   #     with:
   #       server: linux104.unoeuro.com
-  #       server-dir: ./public_html/vlp-website
+  #       server-dir: ./public_html/vlp-website/
   #       username: lucaszago.dk
   #       password: ${{ secrets.LUCAS_FTP_PASSWORD }}
   # web-deploy:
@@ -43,7 +43,7 @@ jobs:
   #     uses: SamKirkland/FTP-Deploy-Action@4.2.0
   #     with:
   #       server: linux166.unoeuro.com
-  #       server-dir: ./public_html/vlp-website
+  #       server-dir: ./public_html/vlp-website/
   #       username: hubkur.dk
   #       password: ${{ secrets.HUBERT_FTP_PASSWORD }}
   # web-deploy:
@@ -57,6 +57,6 @@ jobs:
   #     uses: SamKirkland/FTP-Deploy-Action@4.2.0
   #     with:
   #       server: ftp.mediarei.com
-  #       server-dir: ./customers/3/d/7/mediarei.com/httpd.www/vlp-website
+  #       server-dir: ./customers/3/d/7/mediarei.com/httpd.www/vlp-website/
   #       username: mediarei.com
   #       password: ${{ secrets.REI_FTP_PASSWORD }}
