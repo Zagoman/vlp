@@ -131,7 +131,7 @@ img {
 }
 /* ?End of Hero Section */
 
-/* ?beginning of footer */
+/* ? beginning of footer */
 
 footer {
   text-align: center;
@@ -158,10 +158,15 @@ footer {
 #footer-SoMe {
   display: flex;
   justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 .footer-SoMe-container {
   display: flex;
   gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  margin: 1em;
 }
 .footer-SoMe-container img {
   width: 2em;
@@ -171,3 +176,27 @@ footer {
 /* beginning of single artwork page  */
 
 /* end of single artwork page  */
+@media screen and (max-width: 425px) {
+  #footer-mobile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  .footer-logo img {
+    width: 20%;
+    height: 20%;
+  }
+
+  #footer-nav-bar {
+    display: grid;
+    justify-items: start;
+  }
+  #footer-nav-bar a {
+    margin: 0.5em;
+  }
+  #footer-SoMe {
+    margin: 0;
+  }
+}
+/* ?end of footer */
