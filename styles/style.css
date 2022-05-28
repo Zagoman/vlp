@@ -348,6 +348,10 @@ footer {
   .logo {
     transform: translateY(-50%);
   }
+  
+  .menu-btn {
+    height: 2.2rem;
+  }
 }
 
 
