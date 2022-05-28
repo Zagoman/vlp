@@ -1,6 +1,6 @@
 const menuBtn = document.querySelector(".menu-btn");
 let menuOpen = false;
-const navLinks = document.querySelector("#nav-links");
+const navLinks = document.querySelector("#navbar");
 let linksHidden = true;
 
 
