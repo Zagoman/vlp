@@ -1,10 +1,12 @@
-const queue = [];
 const images = [];
 const cardsParent = document.querySelector(".cards");
 const cardsChildren = cardsParent.children;
 const cards = document.querySelectorAll(".card");
 const btnNext = document.querySelector(".next-card");
 const btnPrev = document.querySelector(".prev-card");
+let cardsOnView;
+updateView();
+window.addEventListener("resize", updateView);
 btnNext.addEventListener("click", nextCard);
 btnPrev.addEventListener("click", prevCard);
 for (let i = 0; i < 10; i++) {
@@ -15,21 +17,19 @@ for (let i = 0; i < 10; i++) {
   card.append(img);
   card.classList.add("card");
 
-  i < 7
+  i < cardsOnView
     ? card.classList.add(`--card-${i}`)
     : card.classList.add(`--display-none`);
   cardsParent.appendChild(card);
 }
 
-// function cardUpdate() {
-//   for (let i = 0; i < 10; i++) {
-//     cardsParent.children[i].querySelector("img").src = images[i];
-
-//     document.querySelector("html").offsetHeight;
-//     cardsParent.children[i].classList.add(`--card-${i}`);
-//     console.log(cardsParent.children);
-//   }
-// }
+function updateView() {
+  if (window.innerWidth >= 800) {
+    cardsOnView = 7;
+  } else {
+    cardsOnView = 4;
+  }
+}
 function nextCard() {
   for (let i = 0; i < cardsChildren.length; i++) {
     let curChild = cardsChildren[i];
@@ -37,11 +37,11 @@ function nextCard() {
       curChild.classList.add(`--display-none`);
       curChild.classList.remove(`--card-${i}`);
     }
-    if (i === 7) {
+    if (i === cardsOnView) {
       curChild.classList.remove(`--display-none`);
-      curChild.classList.add(`--card-6`);
+      curChild.classList.add(`--card-${cardsOnView - 1}`);
     }
-    if (i > 0 && i < 7) {
+    if (i > 0 && i < cardsOnView) {
       curChild.classList.add(`--card-${i - 1}`);
       curChild.classList.remove(`--card-${i}`);
     }
@@ -52,7 +52,23 @@ function nextCard() {
   cardsParent.append(clone);
 }
 function prevCard() {
-  // curImg = images.pop();
-  // images.unshift(curImg);
-  cardUpdate();
+  for (let i = 0; i < cardsChildren.length; i++) {
+    let curChild = cardsChildren[i];
+    if (i === cardsChildren.length - 1) {
+      curChild.classList.remove(`--display-none`);
+      curChild.classList.add(`--card-0`);
+    }
+    if (i === cardsOnView - 1) {
+      curChild.classList.add(`--display-none`);
+      curChild.classList.remove(`--card-${cardsOnView - 1}`);
+    }
+    if (i >= 0 && i < cardsOnView - 1) {
+      curChild.classList.add(`--card-${i + 1}`);
+      curChild.classList.remove(`--card-${i}`);
+    }
+  }
+  let clone = cardsChildren[cardsChildren.length - 1].cloneNode(true);
+  cardsParent.removeChild(cardsChildren[cardsChildren.length - 1]);
+  document.querySelector("html").offsetHeight;
+  cardsParent.prepend(clone);
 }
