@@ -171,6 +171,29 @@ footer {
 .footer-SoMe-container img {
   width: 2em;
 }
+@media screen and (max-width: 425px) {
+  #footer-mobile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  .footer-logo img {
+    width: 20%;
+    height: 20%;
+  }
+
+  #footer-nav-bar {
+    display: grid;
+    justify-items: start;
+  }
+  #footer-nav-bar a {
+    margin: 0.5em;
+  }
+  #footer-SoMe {
+    margin: 0;
+  }
+}
 /* ?end of footer */
 
 /* beginning of single artwork page  */
@@ -203,28 +226,4 @@ footer {
   margin-left: 10%;
   margin-top: 1em;
 }
-/* end of single artwork page  */
-@media screen and (max-width: 425px) {
-  #footer-mobile-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-  }
-  .footer-logo img {
-    width: 20%;
-    height: 20%;
-  }
-
-  #footer-nav-bar {
-    display: grid;
-    justify-items: start;
-  }
-  #footer-nav-bar a {
-    margin: 0.5em;
-  }
-  #footer-SoMe {
-    margin: 0;
-  }
-}
-/* ?end of footer */
+/* ?end of single artwork page  */
