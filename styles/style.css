@@ -174,7 +174,35 @@ footer {
 /* ?end of footer */
 
 /* beginning of single artwork page  */
-
+#title_single_art {
+  text-align: center;
+  margin: 1em;
+}
+#image_single_art {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+#artists_name_single_art {
+  margin-left: 10%;
+  margin-top: 1em;
+}
+#origin_single_art {
+  margin-left: 10%;
+  margin-bottom: 2em;
+}
+#text_single_art {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#price_single_art {
+  margin-left: 10%;
+}
+#spec_single_art {
+  margin-left: 10%;
+  margin-top: 1em;
+}
 /* end of single artwork page  */
 @media screen and (max-width: 425px) {
   #footer-mobile-container {
