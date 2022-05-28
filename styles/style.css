@@ -224,9 +224,6 @@ footer {
 .--card-6 {
   display: none;
 }
-.--display-none {
-  display: none;
-}
 
 @media only screen and (min-width: 800px) {
   .cards-wrapper {
@@ -332,3 +329,8 @@ footer {
 }
 
 /* ?End of exhibition slider */
+/* ?Utilities */
+.--display-none {
+  display: none;
+}
+/* ?End of utilities */
