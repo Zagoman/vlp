@@ -290,42 +290,6 @@ footer {
     right: 0;
     z-index: 1;
   }
-  /* !moving animations */
-  .--move-to-pos1 {
-    left: 0;
-    width: calc((var(--main-card-width) * 3));
-    z-index: 2;
-  }
-  .--move-to-pos2 {
-    left: 0;
-    width: calc((var(--main-card-width) * 3));
-    z-index: 2;
-  }
-  .--move-to-pos3 {
-    left: 0;
-    width: calc((var(--main-card-width) * 3));
-    z-index: 2;
-  }
-  .--move-to-pos4 {
-    left: 0;
-    width: calc((var(--main-card-width) * 3));
-    z-index: 2;
-  }
-  .--move-to-pos5 {
-    left: 0;
-    width: calc((var(--main-card-width) * 3));
-    z-index: 2;
-  }
-  .--move-to-pos6 {
-    left: 0;
-    width: calc((var(--main-card-width) * 3));
-    z-index: 2;
-  }
-  .--move-to-pos7 {
-    left: 0;
-    width: calc((var(--main-card-width) * 3));
-    z-index: 2;
-  }
 }
 
 /* ?End of exhibition slider */
