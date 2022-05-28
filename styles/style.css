@@ -241,6 +241,7 @@ footer {
   align-items: center;
   justify-self: flex-start;
   width: 5rem;
+  height: 10rem;
   cursor: pointer;
 }
 
