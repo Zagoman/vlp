@@ -263,6 +263,7 @@ footer {
 }
 #container_news_contact h1 {
   margin: 5%;
+  text-align: center;
 }
 #container_news_contact p {
   margin: 5%;
@@ -274,6 +275,15 @@ footer {
   margin-bottom: 2%;
   margin-left: 5%;
   margin-right: 5%;
+}
+#map_contact {
+  margin: 5%;
+}
+@media screen and (min-width: 768px) {
+  #map_contact {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* ? end of contact page */
