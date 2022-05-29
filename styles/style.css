@@ -16,12 +16,13 @@
   --color-accent: #000;
 
   /* !spacings */
-  --spacing-xsmall: 1em;
-  --spacing-small: 1em;
-  --spacing-medium: 1em;
-  --spacing-large: 1em;
-  --spacing-xlarge: 1em;
-  --spacing-xxlarge: 1em;
+  --spacing-xsmall: 0.618rem;
+  --spacing-small: 1rem;
+  --spacing-medium: 1.618rem;
+  --spacing-large: 2.618rem;
+  --spacing-xlarge: 4.236rem;
+  --spacing-xxlarge: 6.854rem;
+  --spacing-xxxlarge: 11.089rem;
 }
 * {
   margin: 0;
@@ -46,13 +47,6 @@ img {
     --font-xxlarge: 3.157em;
     --font-largest: 4.209em;
 
-    /* !spacings */
-    --spacing-xsmall: 1em;
-    --spacing-small: 1em;
-    --spacing-medium: 1em;
-    --spacing-large: 1em;
-    --spacing-xlarge: 1em;
-    --spacing-xxlarge: 1em;
   }
   body {
     font-size: 1rem;
