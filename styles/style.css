@@ -46,7 +46,6 @@ img {
     --font-xlarge: 2.369em;
     --font-xxlarge: 3.157em;
     --font-largest: 4.209em;
-
   }
   body {
     font-size: 1rem;
@@ -196,12 +195,59 @@ footer {
 }
 /* ?end of footer */
 
-
 /* BEGINNING OF ABOUT PAGE */
-
+.centered-header {
+  text-align: center;
+}
+.team {
+  padding-top: var(--spacing-large);
+}
 .teamgrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: var(--spacing-xlarge);
+  padding-top: var(--spacing-large);
 }
+.teamgrid p {
+  max-width: 66ch;
+}
+.teamgrid img {
+  margin: auto;
+}
+.valmescom {
+  max-width: 66ch;
+}
+.magda h3 {
+  padding-bottom: var(--spacing-small);
+}
+.alicja h3 {
+  padding-bottom: var(--spacing-small);
+}
+.bartek h3 {
+  padding-bottom: var(--spacing-small);
+}
+.logoCloud {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--spacing-medium);
+}
+.logoCloud img {
+  width: 50vw;
+}
+
+@media only screen and (min-width: 699px) {
+  .teamgrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 599px) {
+  .logoCloud {
+    justify-content: center;
+  }
+  .logoCloud img {
+    width: 20vw;
+    max-height: 100%;
+  }
+}
+/* *** END OF ABOUT PAGE****** */
