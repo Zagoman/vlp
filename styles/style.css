@@ -231,11 +231,10 @@ footer {
   .container_1_single_art {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   #artists_name_single_art {
-    margin-left: 10%;
     margin-top: 0;
   }
   .image_single_art {
@@ -243,6 +242,10 @@ footer {
   }
   #image_single_art {
     width: 100%;
+  }
+  #title_single_art {
+    text-align: left;
+    margin-left: 5%;
   }
 }
 /* end of single artwork page  */
