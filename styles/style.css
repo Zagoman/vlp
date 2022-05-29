@@ -171,9 +171,33 @@ footer {
 .footer-SoMe-container img {
   width: 2em;
 }
+@media screen and (max-width: 425px) {
+  #footer-mobile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  .footer-logo img {
+    width: 20%;
+    height: 20%;
+  }
+
+  #footer-nav-bar {
+    display: grid;
+    justify-items: start;
+  }
+  #footer-nav-bar a {
+    margin: 0.5em;
+  }
+  #footer-SoMe {
+    margin: 0;
+  }
+}
 /* ?end of footer */
 
 /* beginning of single artwork page  */
+
 #title_single_art {
   text-align: center;
   margin: 1em;
@@ -203,28 +227,22 @@ footer {
   margin-left: 10%;
   margin-top: 1em;
 }
-/* end of single artwork page  */
-@media screen and (max-width: 425px) {
-  #footer-mobile-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-  }
-  .footer-logo img {
-    width: 20%;
-    height: 20%;
-  }
-
-  #footer-nav-bar {
+@media screen and (min-width: 768px) {
+  .container_1_single_art {
     display: grid;
-    justify-items: start;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
   }
-  #footer-nav-bar a {
-    margin: 0.5em;
+  #artists_name_single_art {
+    margin-left: 10%;
+    margin-top: 0;
   }
-  #footer-SoMe {
-    margin: 0;
+  .image_single_art {
+    width: 100%;
+  }
+  #image_single_art {
+    width: 100%;
   }
 }
-/* ?end of footer */
+/* end of single artwork page  */
