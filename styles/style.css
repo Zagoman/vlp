@@ -205,4 +205,9 @@ footer {
 
 /* BEGINNING OF ABOUT PAGE */
 
-
+.teamgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: var(--spacing-xlarge);
+}
