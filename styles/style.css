@@ -46,6 +46,10 @@ img {
 h1 {
   font-family: "ClashGrotesk-Variable";
 }
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+}
 @media only screen and (min-width: 800px) {
   :root {
     /* !typography */
@@ -364,10 +368,8 @@ footer {
 /* ?Beginning of sign-up form */
 .signupContainer {
   display: grid;
-  grid-template-columns: 12fr;
-  column-gap: 1.5rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: var(--spacing-medium);
 }
 .ctaHeader {
   color: var(--color-accent);
@@ -383,10 +385,7 @@ footer {
   font-weight: 300;
 }
 .signupForm-content {
-  margin-top: 1.5em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  padding-bottom: 1.5em;
+  margin: var(--spacing-medium);
 }
 .signupForm {
   grid-column: 1 / 7;
@@ -413,7 +412,12 @@ footer {
   display: none;
   height: 100%;
   max-width: 100%;
-  grid-column: 7 / 12;
+  grid-column: 7 / -1;
+}
+.signupImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 @media only screen and (min-width: 485px) {
   .signupForm input {
