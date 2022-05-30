@@ -612,3 +612,41 @@ footer {
   }
 }
 /* end of single artwork page  */
+/* ? beginning of contact page */
+#title_contact {
+  text-align: center;
+}
+.container_1_contact {
+  margin: 10%;
+}
+#container_news_contact {
+  border: solid #000 4px;
+  background-color: aqua;
+  margin: 5%;
+}
+#container_news_contact h1 {
+  margin: 5%;
+  text-align: center;
+}
+#container_news_contact p {
+  margin: 5%;
+}
+#fake_news_contact {
+  display: block;
+  border: solid #000 4px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#map_contact {
+  margin: 5%;
+}
+@media screen and (min-width: 768px) {
+  #map_contact {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* ? end of contact page */
