@@ -204,10 +204,6 @@ footer {
 }
 /* ?end of footer */
 
-/* ?beginning of single artwork page  */
-
-/* ?end of single artwork page  */
-
 /* ?BEGINNING OF NAVBAR */
 
 #navbar-section {
@@ -565,6 +561,7 @@ footer {
 #title_single_art {
   text-align: center;
   margin: 1em;
+  font-family: "Clash Grotesk", sans-serif;
 }
 #image_single_art {
   display: block;
@@ -575,21 +572,28 @@ footer {
 #artists_name_single_art {
   margin-left: 10%;
   margin-top: 1em;
+  font-family: "Clash Grotesk", sans-serif;
 }
 #origin_single_art {
   margin-left: 10%;
   margin-bottom: 2em;
+  font-family: "Poppins", sans-serif;
 }
 #text_single_art {
   margin-left: 10%;
   margin-right: 10%;
+  font-family: "Poppins", sans-serif;
 }
 #price_single_art {
   margin-left: 10%;
+  margin-top: 1em;
+  font-family: "Clash Grotesk", sans-serif;
+  font-weight: 600;
 }
 #spec_single_art {
   margin-left: 10%;
   margin-top: 1em;
+  font-family: "Poppins", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .container_1_single_art {
