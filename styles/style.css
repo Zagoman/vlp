@@ -15,7 +15,8 @@
   /* !colors */
   --color-primary: #000;
   --color-secondary: #fff;
-  --color-accent: #000;
+  --color-accent: #d5ff2c;
+  --color-blue: #4e5ce5;
 
   /* !spacings */
   --spacing-xsmall: 0.618rem;
@@ -141,20 +142,14 @@ img {
 
 footer {
   text-align: center;
+  margin-top: var(--spacing-xxlarge);
+  margin-bottom: var(--spacing-medium);
 }
 .footer-logo img {
   width: 200px;
   height: 200px;
 }
-#footer-nav-bar a {
-  margin-left: 4%;
-  margin-right: 4%;
-}
 
-#footer-location {
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
 #footer-address {
   font-size: var(--font-small);
 }
@@ -164,15 +159,15 @@ footer {
 #footer-SoMe {
   display: flex;
   justify-content: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
 }
 .footer-SoMe-container {
   display: flex;
   gap: 1rem;
   justify-items: center;
   align-items: center;
-  margin: 1em;
+  margin: var(--font-small);
 }
 .footer-SoMe-container img {
   width: 2em;
@@ -243,7 +238,7 @@ footer {
 
 #navbar a {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-secondary);
 }
 
 .menu-btn {
@@ -260,7 +255,7 @@ footer {
 .menu-btn-burger {
   width: 3.1rem;
   height: 0.4rem;
-  background: #fff;
+  background: var(--color-secondary);
   transition: all 0.5s ease-in-out;
 }
 
@@ -270,7 +265,7 @@ footer {
   position: absolute;
   width: 3.1rem;
   height: 0.4rem;
-  background: #fff;
+  background: var(--color-secondary);
   transition: all 0.5s ease-in-out;
 }
 
@@ -375,7 +370,7 @@ footer {
   margin-right: 1.5rem;
 }
 .ctaHeader {
-  color: #d5ff2c;
+  color: var(--color-accent);
   font-size: var(--font-xxlarge);
   font-family: "Clash Grotesk", sans-serif;
   font-weight: 600;
@@ -396,14 +391,14 @@ footer {
 .signupForm {
   grid-column: 1 / 7;
   height: fit-content;
-  background-color: #000;
-  border: solid 4px #d5ff2c;
+  background-color: var(--color-primary);
+  border: solid 4px var(--color-accent);
 }
 .signupForm input {
   margin-bottom: 5%;
   height: 3rem;
   width: 100%;
-  border: solid 3px #d5ff2c;
+  border: solid 3px var(--color-accent);
   font-family: "Poppins", sans-serif;
 }
 .emailFlex {
@@ -451,7 +446,7 @@ footer {
   position: relative;
 }
 .card {
-  border: 1px solid black;
+  border: 1px solid var(--color-primary);
   position: absolute;
   top: 50%;
   aspect-ratio: 7/8;
@@ -502,7 +497,7 @@ footer {
     position: relative;
   }
   .card {
-    border: 1px solid black;
+    border: 1px solid var(--color-primary);
     position: absolute;
     top: 50%;
     right: auto;
