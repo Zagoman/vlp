@@ -118,6 +118,7 @@ img {
   inset: 50vh auto auto 1rem;
 }
 /* ?End of Video Interaction on Hero */
+
 /* ?Hero Section */
 .button-enter {
   position: absolute;
@@ -169,9 +170,6 @@ footer {
 }
 /* ?end of footer */
 
-/* beginning of single artwork page  */
-
-/* end of single artwork page  */
 @media screen and (max-width: 425px) {
   #footer-mobile-container {
     display: flex;
@@ -196,6 +194,10 @@ footer {
   }
 }
 /* ?end of footer */
+
+/* ?beginning of single artwork page  */
+
+/* ?end of single artwork page  */
 
 /* ?BEGINNING OF NAVBAR */
 
@@ -429,3 +431,127 @@ footer {
   }
 }
 /* ?End of sign-up form  */
+/* ?Exhibition-slider */
+.cards-wrapper {
+  padding: 1rem;
+  height: 50vh;
+}
+.cards {
+  /* display: flex; */
+  /* align-items: center; */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* transform: translateY(10rem); */
+}
+.card {
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  object-fit: cover;
+  transition: transform 200ms cubic-bezier(0, 0.99, 0.74, 1),
+    box-shadow 200ms cubic-bezier(0, 0.99, 0.74, 1),
+    left 200ms cubic-bezier(0, 0.99, 0.74, 1),
+    width 200ms cubic-bezier(0, 0.99, 0.74, 1),
+    z-index 100ms cubic-bezier(0, 0.99, 0.74, 1);
+}
+.--card-0 {
+  width: calc((var(--main-card-width) * 2));
+  z-index: 2;
+  left: 0;
+}
+.--card-1 {
+  width: calc(var(--main-card-width) * 3);
+  z-index: 3;
+  left: calc(var(--main-card-width));
+}
+.--card-2 {
+  width: calc(var(--main-card-width) * 2);
+  left: calc(var(--main-card-width) * 3);
+  z-index: 2;
+}
+.--card-3 {
+  width: calc(var(--main-card-width) * 1);
+  right: 0;
+  z-index: 1;
+}
+.--card-4,
+.--card-5,
+.--card-6 {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .cards-wrapper {
+    padding: 4rem;
+    height: 60vw;
+  }
+  .cards {
+    /* display: flex; */
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* transform: translateY(10rem); */
+  }
+  .card {
+    aspect-ratio: 2;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    right: auto;
+    display: block;
+    perspective: 1000px;
+    transform: translateY(-50%) scale(1) rotateY(0deg);
+
+    cursor: pointer;
+  }
+  .card:hover {
+    transform: translateY(-50%) scale(1.02) rotateY(30deg);
+    box-shadow: 0px 5px 7px rgba(255, 0, 0, 0.1),
+      0px 15px 25px rgba(255, 0, 0, 0.025), 0px 35px 30px rgba(255, 0, 0, 0.015);
+  }
+  .--card-0 {
+    width: calc((var(--main-card-width) * 3));
+    z-index: 3;
+    left: 0;
+  }
+  .--card-1 {
+    width: calc(var(--main-card-width) * 4);
+    z-index: 4;
+    left: calc(var(--main-card-width) * 1.5);
+  }
+  .--card-2 {
+    width: calc(var(--main-card-width) * 5);
+    left: calc(var(--main-card-width) * 3.5);
+    z-index: 5;
+  }
+  .--card-3 {
+    width: calc(var(--main-card-width) * 4);
+    left: calc(var(--main-card-width) * 6.5);
+    z-index: 4;
+  }
+  .--card-4 {
+    width: calc((var(--main-card-width) * 3));
+    left: calc(var(--main-card-width) * 9);
+    z-index: 3;
+  }
+  .--card-5 {
+    width: calc(var(--main-card-width) * 2);
+    left: calc(var(--main-card-width) * 11);
+    z-index: 2;
+  }
+  .--card-6 {
+    width: calc(var(--main-card-width));
+    right: 0;
+    z-index: 1;
+  }
+}
+
+/* ?End of exhibition slider */
+/* ?Utilities */
+.--display-none {
+  display: none;
+}
+/* ?End of utilities */
