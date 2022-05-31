@@ -214,6 +214,9 @@ h2 {
   inset: auto 50% 10vh auto;
   transform: translateX(50%);
   padding: 1rem 3rem;
+  background: url(../media/BUTTON_ENTER.svg);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
 }
 /* ?End of Hero Section */
 

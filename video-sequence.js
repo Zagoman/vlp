@@ -4,17 +4,17 @@ const btnEnter = document.querySelector(".button-enter");
 const parent = document.querySelector(".hero-section");
 let canvas;
 let video;
-let videoSrcs = [];
+let videoSrcs = ["1_video.mp4"];
 let curId = 0;
 
 function setup() {
   canvas = createCanvas(window.innerWidth, window.innerHeight);
   canvas.parent(parent);
   background(110);
-  for (let i = 1; i <= 7; i++) {
+  video = createVideo("./media/" + videoSrcs[0], vidLoad);
+  for (let i = 2; i <= 7; i++) {
     videoSrcs.push(`${i}_video.mp4`);
   }
-  video = createVideo("./media/" + videoSrcs[0], vidLoad);
   video.hide();
 }
 
