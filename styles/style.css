@@ -98,13 +98,7 @@
 
   /* !Font family */
   --font-family_primary: "Poppins", sans-serif;
-  --font-family_falsebold: "falsebold", sans-serif;
-  --font-family_variable-bold: "clash_grotesk_variablebold", sans-serif;
-  --font-family_semibold: "clash_grotesksemibold", sans-serif;
-  --font-family_falsenormal: "falsenormal", sans-serif;
-  --font-family_medium: "clash_groteskmedium", sans-serif;
-  --font-family_light: "clash_grotesklight", sans-serif;
-  --font-family_xlight: "clash_groteskextralight", sans-serif;
+  --font-family_falsebold: "clash_grotesk", sans-serif;
 }
 
 * {
