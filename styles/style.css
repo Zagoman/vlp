@@ -463,13 +463,30 @@ footer {
   background-color: var(--color-primary);
   border: solid 4px var(--color-accent);
 }
-.signupForm input {
+.signupForm input:nth-child(2) {
   margin-bottom: 5%;
   height: 3rem;
   width: 100%;
   border: solid 3px var(--color-accent);
   font-family: "Poppins", sans-serif;
 }
+/* MAILCHIMP FORM STYLING BEGINS**** */
+.emailaddress {
+  color: var(--color-secondary);
+}
+#mce-success-response {
+  color: var(--color-secondary);
+  font-size: var(--font-xsmall);
+}
+#mc-embedded-subscribe {
+  height: 4rem;
+}
+
+.mce_inline_error {
+  font-size: var(--font-xsmall);
+}
+/* MAILCHIMP STYLING ENDS */
+
 .emailFlex {
   display: flex;
   flex-direction: column;
