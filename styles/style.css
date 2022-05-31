@@ -464,7 +464,7 @@ footer {
 }
 .signupForm {
   height: fit-content;
-  /* background-color: var(--color-primary); */
+  background-color: var(--color-primary);
   border: solid 4px var(--color-accent);
 }
 
