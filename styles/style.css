@@ -443,8 +443,7 @@ footer {
 /* ?END OF NAVBAR */
 /* ?Beginning of sign-up form */
 .signupContainer {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  margin: auto;
   column-gap: var(--spacing-medium);
 }
 .ctaHeader {
@@ -464,11 +463,11 @@ footer {
   margin: var(--spacing-medium);
 }
 .signupForm {
-  grid-column: 1 / 7;
   height: fit-content;
   background-color: var(--color-primary);
   border: solid 4px var(--color-accent);
 }
+
 .signupForm input {
   margin-bottom: 5%;
   height: 3rem;
@@ -480,15 +479,14 @@ footer {
   display: flex;
   flex-direction: column;
 }
-/* #signupBtn {
-  background-color: #d40000;
-  color: #fff;
-} */
+
+#signupBtn img {
+  width: 100%;
+  display: block;
+}
+
 .signupImage {
   display: none;
-  height: 100%;
-  max-width: 100%;
-  grid-column: 7 / -1;
 }
 .signupImage img {
   width: 100%;
@@ -496,22 +494,44 @@ footer {
   object-fit: cover;
 }
 @media only screen and (min-width: 485px) {
-  .signupForm input {
-    width: 100%;
+  .item-1 {
+    flex-grow: 1;
+    align-self: center;
   }
-  /*   #signupBtn {
-    width: 40%;
-    justify-items: flex-end;
+  .item-2 {
+    align-self: center;
+  }
+  .item-1 input {
+    margin-bottom: 0%;
   }
   .emailFlex {
-    display: flex;
     flex-direction: row;
-    gap: 1em;
-  } */
+    gap: 2em;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
+
 @media only screen and (min-width: 799px) {
   .signupImage {
     display: block;
+  }
+  .signupContainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: var(--spacing-medium);
+  }
+  .signupImage {
+    display: block;
+    height: 100%;
+    max-width: 100%;
+    grid-column: 7 / -1;
+  }
+  .signupForm {
+    grid-column: 1 / 7;
+    height: fit-content;
+    background-color: var(--color-primary);
+    border: solid 4px var(--color-accent);
   }
 }
 /* ?End of sign-up form  */
