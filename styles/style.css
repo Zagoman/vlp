@@ -2,62 +2,63 @@
 
 @font-face {
   font-family: "falsebold";
-  src: url("./fonts/clash-font/clashgrotesk-bold-webfont.woff2") format("woff2"),
-    url("./fonts/clash-font/clashgrotesk-bold-webfont.woff") format("woff");
+  src: url("../fonts/clash-font/clashgrotesk-bold-webfont.woff2")
+      format("woff2"),
+    url("../fonts/clash-font/clashgrotesk-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "clash_grotesk_variablebold";
-  src: url("./fonts/clash-font/clashgrotesk-variable-webfont.woff2")
+  src: url("../fonts/clash-font/clashgrotesk-variable-webfont.woff2")
       format("woff2"),
-    url("./fonts/clash-font/clashgrotesk-variable-webfont.woff") format("woff");
+    url("../fonts/clash-font/clashgrotesk-variable-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "clash_grotesksemibold";
-  src: url("./fonts/clash-font/clashgrotesk-semibold-webfont.woff2")
+  src: url("../fonts/clash-font/clashgrotesk-semibold-webfont.woff2")
       format("woff2"),
-    url("./fonts/clash-font/clashgrotesk-semibold-webfont.woff") format("woff");
+    url("../fonts/clash-font/clashgrotesk-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "falsenormal";
-  src: url("./fonts/clash-font/clashgrotesk-regular-webfont.woff2")
+  src: url("../fonts/clash-font/clashgrotesk-regular-webfont.woff2")
       format("woff2"),
-    url("./fonts/clash-font/clashgrotesk-regular-webfont.woff") format("woff");
+    url("../fonts/clash-font/clashgrotesk-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "clash_groteskmedium";
-  src: url("./fonts/clash-font/clashgrotesk-medium-webfont.woff2")
+  src: url("../fonts/clash-font/clashgrotesk-medium-webfont.woff2")
       format("woff2"),
-    url("./fonts/clash-font/clashgrotesk-medium-webfont.woff") format("woff");
+    url("../fonts/clash-font/clashgrotesk-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "clash_grotesklight";
-  src: url("./fonts/clash-font/clashgrotesk-light-webfont.woff2")
+  src: url("../fonts/clash-font/clashgrotesk-light-webfont.woff2")
       format("woff2"),
-    url("./fonts/clash-font/clashgrotesk-light-webfont.woff") format("woff");
+    url("../fonts/clash-font/clashgrotesk-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "clash_groteskextralight";
-  src: url("./fonts/clash-font/clashgrotesk-extralight-webfont.woff2")
+  src: url("../fonts/clash-font/clashgrotesk-extralight-webfont.woff2")
       format("woff2"),
-    url("./fonts/clash-font/clashgrotesk-extralight-webfont.woff")
+    url("../fonts/clash-font/clashgrotesk-extralight-webfont.woff")
       format("woff");
   font-weight: normal;
   font-style: normal;
@@ -97,7 +98,13 @@
 
   /* !Font family */
   --font-family_primary: "Poppins", sans-serif;
-  --font-family_secondary: "Poppins", sans-serif;
+  --font-family_falsebold: "falsebold", sans-serif;
+  --font-family_variable-bold: "clash_grotesk_variablebold", sans-serif;
+  --font-family_semibold: "clash_grotesksemibold", sans-serif;
+  --font-family_falsenormal: "falsenormal", sans-serif;
+  --font-family_medium: "clash_groteskmedium", sans-serif;
+  --font-family_light: "clash_grotesklight", sans-serif;
+  --font-family_xlight: "clash_groteskextralight", sans-serif;
 }
 
 * {
@@ -111,8 +118,9 @@ body {
 img {
   max-width: 100%;
 }
-h1 {
-  font-family: "ClashGrotesk-Variable";
+h1,
+h2 {
+  font-family: var(--font-family_semibold);
 }
 .container {
   max-width: 1440px;
@@ -442,8 +450,8 @@ footer {
 .ctaHeader {
   color: var(--color-accent);
   font-size: var(--font-xxlarge);
-  font-family: "Clash Grotesk", sans-serif;
-  font-weight: 600;
+  /* font-family: "Clash Grotesk", sans-serif; */
+  /* font-weight: 600; */
 }
 .ctaBody {
   padding-top: 0.5em;
