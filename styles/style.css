@@ -31,6 +31,10 @@
 
   /* !card-width */
   --main-card-width: 18.1%;
+
+  /* !Font family */
+  --font-family_primary: "Poppins", sans-serif;
+  --font-family_secondary: "Poppins", sans-serif;
 }
 
 * {
@@ -39,6 +43,7 @@
 }
 body {
   font-size: 0.9rem;
+  font-family: var(--font-family_primary);
 }
 img {
   max-width: 100%;
