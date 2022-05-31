@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 @font-face {
-  font-family: "falsebold";
+  font-family: "clash_grotesk";
   src: url("../fonts/clash-font/clashgrotesk-bold-webfont.woff2")
       format("woff2"),
     url("../fonts/clash-font/clashgrotesk-bold-webfont.woff") format("woff");
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: "clash_grotesk_variablebold";
+  font-family: "clash_grotesk";
   src: url("../fonts/clash-font/clashgrotesk-variable-webfont.woff2")
       format("woff2"),
     url("../fonts/clash-font/clashgrotesk-variable-webfont.woff") format("woff");
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-  font-family: "clash_grotesksemibold";
+  font-family: "clash_grotesk";
   src: url("../fonts/clash-font/clashgrotesk-semibold-webfont.woff2")
       format("woff2"),
     url("../fonts/clash-font/clashgrotesk-semibold-webfont.woff") format("woff");
@@ -28,7 +28,7 @@
 }
 
 @font-face {
-  font-family: "falsenormal";
+  font-family: "clash_grotesk";
   src: url("../fonts/clash-font/clashgrotesk-regular-webfont.woff2")
       format("woff2"),
     url("../fonts/clash-font/clashgrotesk-regular-webfont.woff") format("woff");
@@ -37,7 +37,7 @@
 }
 
 @font-face {
-  font-family: "clash_groteskmedium";
+  font-family: "clash_grotesk";
   src: url("../fonts/clash-font/clashgrotesk-medium-webfont.woff2")
       format("woff2"),
     url("../fonts/clash-font/clashgrotesk-medium-webfont.woff") format("woff");
@@ -46,7 +46,7 @@
 }
 
 @font-face {
-  font-family: "clash_grotesklight";
+  font-family: "clash_grotesk";
   src: url("../fonts/clash-font/clashgrotesk-light-webfont.woff2")
       format("woff2"),
     url("../fonts/clash-font/clashgrotesk-light-webfont.woff") format("woff");
@@ -55,7 +55,7 @@
 }
 
 @font-face {
-  font-family: "clash_groteskextralight";
+  font-family: "clash_grotesk";
   src: url("../fonts/clash-font/clashgrotesk-extralight-webfont.woff2")
       format("woff2"),
     url("../fonts/clash-font/clashgrotesk-extralight-webfont.woff")
