@@ -1,4 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+@font-face {
+  font-family: "falsebold";
+  src: url("./fonts/clash-font/clashgrotesk-bold-webfont.woff2") format("woff2"),
+    url("./fonts/clash-font/clashgrotesk-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "clash_grotesk_variablebold";
+  src: url("./fonts/clash-font/clashgrotesk-variable-webfont.woff2")
+      format("woff2"),
+    url("./fonts/clash-font/clashgrotesk-variable-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "clash_grotesksemibold";
+  src: url("./fonts/clash-font/clashgrotesk-semibold-webfont.woff2")
+      format("woff2"),
+    url("./fonts/clash-font/clashgrotesk-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "falsenormal";
+  src: url("./fonts/clash-font/clashgrotesk-regular-webfont.woff2")
+      format("woff2"),
+    url("./fonts/clash-font/clashgrotesk-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "clash_groteskmedium";
+  src: url("./fonts/clash-font/clashgrotesk-medium-webfont.woff2")
+      format("woff2"),
+    url("./fonts/clash-font/clashgrotesk-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "clash_grotesklight";
+  src: url("./fonts/clash-font/clashgrotesk-light-webfont.woff2")
+      format("woff2"),
+    url("./fonts/clash-font/clashgrotesk-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "clash_groteskextralight";
+  src: url("./fonts/clash-font/clashgrotesk-extralight-webfont.woff2")
+      format("woff2"),
+    url("./fonts/clash-font/clashgrotesk-extralight-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* ?entry styles */
 :root {
   /* !typography */
