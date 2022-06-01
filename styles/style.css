@@ -308,7 +308,7 @@ footer {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 40% 100%;
+  background-position: 40% 0%;
   padding-left: var(--spacing-small);
   padding-bottom: var(--spacing-xlarge);
   display: flex;
@@ -344,15 +344,22 @@ footer {
   grid-column: 1/-1;
 }
 
-#exhibition-info h2 {
+#exhibition-info h2,
+#past-exhibitions h2,
+#past-events h2 {
   font-size: var(--font-xlarge);
   margin-bottom: var(--spacing-small);
 }
 #exhibition-info p {
   margin-bottom: var(--spacing-medium);
 }
-#exhibition-info h3 {
+#exhibition-info h3,
+#past-exhibitions h3,
+#past-events h3 {
   font-size: var(--font-large);
+}
+#past-events h3 {
+  color: var(--color-red);
 }
 #exhibition-info h4 {
   font-size: var(--font-small);
@@ -369,11 +376,32 @@ footer {
   display: block;
   margin-bottom: var(--spacing-small);
 }
+#past-exhibitions {
+  background-color: var(--color-red);
+  color: var(--color-secondary);
+}
+#past-events {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+#past-exhibitions,
+#past-events {
+  padding-block: var(--spacing-large);
+  padding-inline: var(--spacing-small);
+}
+#past-exhibitions h3 {
+  margin-bottom: var(--spacing-small);
+}
+
+#past-exhibitions p,
+#past-events p {
+  margin-top: var(--spacing-medium);
+}
 
 @media only screen and (min-width: 600px) {
   #current-exhibition_hero > div {
     justify-content: flex-start;
-    padding-top: var(--spacing-xxxlarge);
+    padding-top: var(--spacing-xxlarge);
   }
   .label {
     max-width: none;
@@ -383,6 +411,22 @@ footer {
   }
   #current-exhibition_hero {
     height: 80vh;
+  }
+  #past-exhibitions article,
+  #past-events article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-medium);
+  }
+  #past-events .right-content {
+    order: 1;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #past-exhibitions .left-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
   }
 }
 /* ?end of single artwork page  */
