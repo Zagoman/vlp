@@ -22,7 +22,7 @@ function setup() {
     videoSrcs.push(`${i}_video.mp4`);
   }
   video.hide();
-  updateLink();
+  updateUI();
 }
 
 function draw() {
@@ -48,7 +48,7 @@ function nexVid() {
   video.remove();
   video = createVideo("./media/" + videoSrcs[curId], vidLoad);
   video.hide();
-  updateLink();
+  updateUI();
 }
 function prevVid() {
   if (curId > 2) {
@@ -59,31 +59,45 @@ function prevVid() {
   video.remove();
   video = createVideo("./media/" + videoSrcs[curId], vidLoad);
   video.hide();
-  updateLink();
+  updateUI();
 }
-function updateLink() {
-  console.log(btnEnter);
+function updateUI() {
+  console.log(curId);
   switch (curId) {
     case 0:
       // btnEnter.href = pages.home
+      btnPrev.classList.add("--display-none");
+      btnNext.classList.add("--display-none");
+      btnEnter.addEventListener("click", nexVid);
       break;
     case 1:
-      // btnEnter.href = pages.about
+      btnEnter.removeEventListener("click", nexVid, false);
+      btnEnter.classList.add("--display-none");
       break;
     case 2:
+      if (btnPrev.classList.contains("--display-none")) {
+        btnPrev.classList.remove("--display-none");
+        btnNext.classList.remove("--display-none");
+        btnEnter.classList.remove("--display-none");
+      }
       btnEnter.href = pages.contact;
+      btnEnter.textContent = "Enter Contact";
       break;
     case 3:
       btnEnter.href = pages.exhibitions;
+      btnEnter.textContent = "Enter Exhibitions";
       break;
     case 4:
       btnEnter.href = pages.about;
+      btnEnter.textContent = "Enter About";
       break;
     case 5:
       btnEnter.href = pages.home;
+      btnEnter.textContent = "Enter About";
       break;
     case 6:
       btnEnter.href = pages.home;
+      btnEnter.textContent = "Enter About";
   }
 }
 btnPrev.addEventListener("click", prevVid);

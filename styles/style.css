@@ -80,6 +80,7 @@
   --color-secondary: #fff;
   --color-accent: #d5ff2c;
   --color-blue: #4e5ce5;
+  --color-red: #dd3123;
 
   /* !spacings */
   --spacing-xsmall: 0.618rem;
@@ -98,7 +99,7 @@
 
   /* !Font family */
   --font-family_primary: "Poppins", sans-serif;
-  --font-family_falsebold: "clash_grotesk", sans-serif;
+  --font-family_secondary: "clash_grotesk", sans-serif;
 }
 
 * {
@@ -114,7 +115,7 @@ img {
 }
 h1,
 h2 {
-  font-family: var(--font-family_semibold);
+  font-family: var(--font-family_secondary);
 }
 .container {
   max-width: 1440px;
@@ -214,9 +215,20 @@ h2 {
   inset: auto 50% 10vh auto;
   transform: translateX(50%);
   padding: 1rem 3rem;
-  background: url(../media/BUTTON_ENTER.svg);
-  /* background-size: cover; */
-  background-repeat: no-repeat;
+  background-color: var(--color-red);
+  font-family: var(--font-family_secondary);
+  font-size: var(--font-large);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  text-shadow: 4px 4px 0px var(--color-primary);
+  -webkit-text-stroke: 1px var(--color-primary);
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 300ms var(--animation-easing);
+}
+.button-enter:hover {
+  --color-red: #a92519;
 }
 /* ?End of Hero Section */
 
