@@ -1,4 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+@font-face {
+  font-family: "clash_grotesk";
+  src: url("../fonts/clash-font/clashgrotesk-bold-webfont.woff2")
+      format("woff2"),
+    url("../fonts/clash-font/clashgrotesk-bold-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "clash_grotesk";
+  src: url("../fonts/clash-font/clashgrotesk-variable-webfont.woff2")
+      format("woff2"),
+    url("../fonts/clash-font/clashgrotesk-variable-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "clash_grotesk";
+  src: url("../fonts/clash-font/clashgrotesk-semibold-webfont.woff2")
+      format("woff2"),
+    url("../fonts/clash-font/clashgrotesk-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "clash_grotesk";
+  src: url("../fonts/clash-font/clashgrotesk-regular-webfont.woff2")
+      format("woff2"),
+    url("../fonts/clash-font/clashgrotesk-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "clash_grotesk";
+  src: url("../fonts/clash-font/clashgrotesk-medium-webfont.woff2")
+      format("woff2"),
+    url("../fonts/clash-font/clashgrotesk-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "clash_grotesk";
+  src: url("../fonts/clash-font/clashgrotesk-light-webfont.woff2")
+      format("woff2"),
+    url("../fonts/clash-font/clashgrotesk-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "clash_grotesk";
+  src: url("../fonts/clash-font/clashgrotesk-extralight-webfont.woff2")
+      format("woff2"),
+    url("../fonts/clash-font/clashgrotesk-extralight-webfont.woff")
+      format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
 /* ?entry styles */
 :root {
   /* !typography */
@@ -32,6 +96,10 @@
 
   /* !card-width */
   --main-card-width: 18.1%;
+
+  /* !Font family */
+  --font-family_primary: "Poppins", sans-serif;
+  --font-family_secondary: "clash_grotesk", sans-serif;
 }
 
 * {
@@ -40,12 +108,18 @@
 }
 body {
   font-size: 0.9rem;
+  font-family: var(--font-family_primary);
 }
 img {
   max-width: 100%;
 }
-h1 {
-  font-family: "ClashGrotesk-Variable";
+h1,
+h2 {
+  font-family: var(--font-family_secondary);
+}
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
 }
 @media only screen and (min-width: 800px) {
   :root {
@@ -102,6 +176,10 @@ h1 {
 }
 /* ?end of Typography */
 /* ?Video Interaction on Hero */
+#video-canvas {
+  width: 100%;
+  height: 100%;
+}
 #entry-video {
   width: 100%;
   max-height: 100vh;
@@ -109,12 +187,12 @@ h1 {
 }
 .button-prev:hover,
 .button-next:hover {
-  color: var(--color-secondary);
+  color: var(--color-red);
 }
 .button-prev,
 .button-next {
   position: absolute;
-  color: var(--color-primary);
+  color: var(--color-secondary);
   background: none;
   border: none;
   z-index: 10;
@@ -137,6 +215,20 @@ h1 {
   inset: auto 50% 10vh auto;
   transform: translateX(50%);
   padding: 1rem 3rem;
+  background-color: var(--color-red);
+  font-family: var(--font-family_secondary);
+  font-size: var(--font-large);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  text-shadow: 4px 4px 0px var(--color-primary);
+  -webkit-text-stroke: 1px var(--color-primary);
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 300ms var(--animation-easing);
+}
+.button-enter:hover {
+  --color-red: #a92519;
 }
 /* ?End of Hero Section */
 
@@ -364,71 +456,82 @@ footer {
 /* ?END OF NAVBAR */
 /* ?Beginning of sign-up form */
 .signupContainer {
-  display: grid;
-  grid-template-columns: 12fr;
-  column-gap: 1.5rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin: auto;
+  column-gap: var(--spacing-medium);
+  max-width: 760px;
 }
 .ctaHeader {
-  color: var(--color-accent);
+  color: var(--color-secondary);
   font-size: var(--font-xxlarge);
-  font-family: "Clash Grotesk", sans-serif;
+  font-family: var(--font-family_falsebold);
   font-weight: 600;
+  text-align: center;
+  min-width: 100%;
+  /* font-family: "Clash Grotesk", sans-serif; */
+  /* font-weight: 600; */
 }
 .ctaBody {
-  padding-top: 0.5em;
+  padding-top: 2em;
   padding-bottom: 0.5em;
   color: var(--color-secondary);
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  font-size: var(--font-xsmall);
+  text-transform: uppercase;
+  text-align: center;
 }
 .signupForm-content {
-  margin-top: 1.5em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  padding-bottom: 1.5em;
+  margin: var(--spacing-medium);
 }
 .signupForm {
-  grid-column: 1 / 7;
-  height: fit-content;
+  padding: var(--spacing-small);
   background-color: var(--color-primary);
-  border: solid 4px var(--color-accent);
 }
-.signupForm input {
+.signupForm input:nth-child(2) {
   margin-bottom: 5%;
   height: 3rem;
   width: 100%;
-  border: solid 3px var(--color-accent);
   font-family: "Poppins", sans-serif;
 }
+/* MAILCHIMP FORM STYLING BEGINS**** */
+.emailaddress {
+  color: var(--color-secondary);
+  font-size: var(--font-xsmall);
+}
+#mce-success-response {
+  color: var(--color-secondary);
+  font-size: var(--font-xsmall);
+}
+#mc-embedded-subscribe {
+  height: 4rem;
+  transition: 0.15s ease-in-out;
+}
+#mce-EMAIL {
+  transition: ease-in-out 0.2s;
+}
+#mce-EMAIL:focus {
+  transform: scale(0.97);
+}
+.signupForm input:focus {
+  border: solid 4px var(--color-blue);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s;
+}
+
+.mce_inline_error {
+  font-size: var(--font-xsmall);
+}
+/* MAILCHIMP STYLING ENDS */
+
 .emailFlex {
   display: flex;
   flex-direction: column;
+  padding-top: var(--spacing-large);
 }
-/* #signupBtn {
-  background-color: #d40000;
-  color: #fff;
-} */
-.signupImage {
-  display: none;
-  height: 100%;
-  max-width: 100%;
-  grid-column: 7 / 12;
-}
+
 @media only screen and (min-width: 485px) {
   .signupForm input {
     width: 100%;
   }
-  /*   #signupBtn {
-    width: 40%;
-    justify-items: flex-end;
-  }
-  .emailFlex {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-  } */
 }
 @media only screen and (min-width: 799px) {
   .signupImage {
@@ -647,3 +750,61 @@ footer {
 }
 
 /* ? end of contact page */
+/* ?Beginning of Marquee */
+.marquee-wrapper {
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee,
+.marquee2 {
+  font-size: var(--font-largest);
+  color: var(--color-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+  font-family: var(--font-family_secondary);
+  overflow: hidden;
+}
+.marquee span,
+.marquee2 span {
+  display: inline;
+}
+.marquee2 {
+  transform: translateX(100vw);
+  animation: marqueeAnim 10s linear infinite;
+  animation-delay: 5s;
+}
+.marquee {
+  animation: marqueeAnim 10s linear infinite;
+}
+.marquee-title {
+  font-size: var(--font-largest);
+  color: var(--color-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: space-around;
+  font-family: var(--font-family_secondary);
+  visibility: hidden;
+}
+@keyframes marqueeAnim {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+/* ?End of Marquee */
