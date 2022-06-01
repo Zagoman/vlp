@@ -62,7 +62,6 @@ function prevVid() {
   updateUI();
 }
 function updateUI() {
-  console.log(curId);
   switch (curId) {
     case 0:
       // btnEnter.href = pages.home
