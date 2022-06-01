@@ -187,12 +187,12 @@ h2 {
 }
 .button-prev:hover,
 .button-next:hover {
-  color: var(--color-secondary);
+  color: var(--color-red);
 }
 .button-prev,
 .button-next {
   position: absolute;
-  color: var(--color-primary);
+  color: var(--color-secondary);
   background: none;
   border: none;
   z-index: 10;
