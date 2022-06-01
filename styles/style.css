@@ -72,8 +72,8 @@
   --font-large: 1.563em;
   --font-xlarge: 1.953em;
   --font-xxlarge: 2.441em;
-  --font-3xlarge: 3.052em;
-  --font-largest: 3.052em;
+  --font-xxxlarge: 3.052em;
+  --font-largest: 6em;
 
   /* !colors */
   --color-primary: #000;
@@ -101,11 +101,31 @@
   --font-family_primary: "Poppins", sans-serif;
   --font-family_secondary: "clash_grotesk", sans-serif;
 }
+@media only screen and (min-width: 800px) {
+  :root {
+    /* !typography */
+    --font-xsmall: 0.75em;
+    --font-small: 1em;
+    --font-medium: 1.333em;
+    --font-large: 1.777em;
+    --font-xlarge: 2.369em;
+    --font-xxlarge: 3.157em;
+    --font-xxxlarge: 4.209em;
+    --font-largest: 6em;
 
+    /* !card-width */
+    --main-card-width: 7.4%;
+  }
+  body {
+    font-size: 1rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 body {
   font-size: 0.9rem;
   font-family: var(--font-family_primary);
@@ -116,28 +136,17 @@ img {
 h1,
 h2 {
   font-family: var(--font-family_secondary);
+  line-height: 1;
 }
 .container {
   max-width: 1440px;
   margin-inline: auto;
 }
-@media only screen and (min-width: 800px) {
-  :root {
-    /* !typography */
-    --font-xsmall: 0.75em;
-    --font-small: 1em;
-    --font-medium: 1.333em;
-    --font-large: 1.777em;
-    --font-xlarge: 2.369em;
-    --font-xxlarge: 3.157em;
-    --font-largest: 4.209em;
-
-    /* !card-width */
-    --main-card-width: 7.4%;
-  }
-  body {
-    font-size: 1rem;
-  }
+ul {
+  list-style: none;
+}
+p {
+  max-width: 62ch;
 }
 /* ?end of entry styles */
 /* ?Typography */
@@ -167,11 +176,7 @@ h2 {
   line-height: 1;
 }
 .fs_3xlarge {
-  font-size: var(--font-3xlarge);
-  line-height: 1;
-}
-.fs_largest {
-  font-size: var(--font-largest);
+  font-size: var(--font-xxxlarge);
   line-height: 1;
 }
 /* ?end of Typography */
@@ -293,7 +298,93 @@ footer {
 /* ?end of footer */
 
 /* ?beginning of single artwork page  */
+#current-exhibition_hero {
+  height: 100vh;
+  padding-top: var(--spacing-xxlarge);
+}
 
+#current-exhibition_hero > div {
+  background-image: url(../media/taktak.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 100%;
+  padding-left: var(--spacing-small);
+  padding-bottom: var(--spacing-xlarge);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.label {
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  max-width: 10ch;
+}
+.exhibition-title {
+  font-size: var(--font-largest);
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-small);
+  text-transform: uppercase;
+}
+.exhibition-dates {
+  color: var(--color-secondary);
+  font-size: var(--font-small);
+}
+
+#exhibition-info {
+  padding: var(--spacing-xlarge) var(--spacing-small);
+}
+#exhibition-info > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-small);
+}
+#extended-info {
+  grid-column: 1/-1;
+}
+
+#exhibition-info h2 {
+  font-size: var(--font-xlarge);
+  margin-bottom: var(--spacing-small);
+}
+#exhibition-info p {
+  margin-bottom: var(--spacing-medium);
+}
+#exhibition-info h3 {
+  font-size: var(--font-large);
+}
+#exhibition-info h4 {
+  font-size: var(--font-small);
+  text-transform: uppercase;
+  font-family: var(--font-family_primary);
+  font-weight: 200;
+  letter-spacing: 0.08em;
+}
+#exhibition-info ul {
+  list-style-type: disc;
+  padding-left: var(--spacing-medium);
+}
+.general-info span {
+  display: block;
+  margin-bottom: var(--spacing-small);
+}
+
+@media only screen and (min-width: 600px) {
+  #current-exhibition_hero > div {
+    justify-content: flex-start;
+    padding-top: var(--spacing-xxxlarge);
+  }
+  .label {
+    max-width: none;
+  }
+  #exhibition-info > div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #current-exhibition_hero {
+    height: 80vh;
+  }
+}
 /* ?end of single artwork page  */
 
 /* ?BEGINNING OF NAVBAR */
@@ -463,12 +554,10 @@ footer {
 .ctaHeader {
   color: var(--color-secondary);
   font-size: var(--font-xxlarge);
-  font-family: var(--font-family_falsebold);
+  font-family: var(--font-family_secondary);
   font-weight: 600;
   text-align: center;
   min-width: 100%;
-  /* font-family: "Clash Grotesk", sans-serif; */
-  /* font-weight: 600; */
 }
 .ctaBody {
   padding-top: 2em;
@@ -493,7 +582,7 @@ footer {
   width: 100%;
   font-family: "Poppins", sans-serif;
 }
-/* MAILCHIMP FORM STYLING BEGINS**** */
+/* ?MAILCHIMP FORM STYLING BEGINS**** */
 .emailaddress {
   color: var(--color-secondary);
   font-size: var(--font-xsmall);
@@ -520,7 +609,7 @@ footer {
 .mce_inline_error {
   font-size: var(--font-xsmall);
 }
-/* MAILCHIMP STYLING ENDS */
+/* ?MAILCHIMP STYLING ENDS */
 
 .emailFlex {
   display: flex;
@@ -659,7 +748,7 @@ footer {
   display: none;
 }
 /* ?End of utilities */
-/* beginning of single artwork page  */
+/* ?beginning of single artwork page  */
 
 #title_single_art {
   text-align: center;
@@ -711,7 +800,7 @@ footer {
     margin-left: 5%;
   }
 }
-/* end of single artwork page  */
+/* ?end of single artwork page  */
 /* ? beginning of contact page */
 #title_contact {
   text-align: center;
