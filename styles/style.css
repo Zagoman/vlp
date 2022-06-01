@@ -758,6 +758,7 @@ footer {
   display: flex;
   align-items: center;
   overflow: hidden;
+  position: relative;
 }
 
 .marquee,
