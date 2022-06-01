@@ -196,6 +196,59 @@ footer {
 /* ?end of footer */
 
 /* BEGINNING OF ABOUT PAGE */
+.repeatText {
+  width: 100vw;
+  background-color: var(--color-primary);
+  overflow: hidden;
+  display: inline-block;
+}
+.repeatText span {
+  display: inline-block;
+  padding: 0px 40px 0px 40px;
+  color: var(--color-secondary);
+  animation: slide 30s linear infinite;
+  animation-duration: 30s;
+  animation-play-state: running;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.repeatText span:nth-child(1) {
+  animation-delay: 0s;
+}
+.repeatText span:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.repeatText span:nth-child(3) {
+  animation-delay: 1.2s;
+}
+.repeatText span:nth-child(4) {
+  animation-delay: 1.8s;
+}
+.repeatText span:nth-child(5) {
+  animation-delay: 2.4s;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(300%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+.community {
+  width: 100vw;
+  background-color: #dd3123;
+}
+.community p {
+  max-width: 66ch;
+  color: var(--color-secondary);
+}
+.community h2 {
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
 .centered-header {
   text-align: center;
 }
@@ -214,6 +267,7 @@ footer {
 }
 .teamgrid img {
   margin: auto;
+  border: var(--color-primary) solid 4px;
 }
 .valmescom {
   max-width: 66ch;
