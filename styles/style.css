@@ -326,13 +326,13 @@ footer {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  gap: var(--spacing-xxlarge);
+  gap: var(--spacing-xlarge);
 }
 
 #navbar a {
   font-family: var(--font-family_primary);
   font-weight: bolder;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-decoration: none;
   color: var(--color-secondary);
 }
