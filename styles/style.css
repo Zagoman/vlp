@@ -315,10 +315,10 @@ footer {
 }
 
 .logo {
-  max-width: 100px;
-  min-width: 80px;
+  max-width: 80px;
+  min-width: 60px;
   width: 10vw;
-  margin: var(--spacing-small);
+  margin-left: var(--spacing-small);
 }
 
 .nav-links {
@@ -330,6 +330,9 @@ footer {
 }
 
 #navbar a {
+  font-family: var(--font-family_primary);
+  font-weight: bolder;
+  text-transform: capitalize;
   text-decoration: none;
   color: var(--color-secondary);
 }
