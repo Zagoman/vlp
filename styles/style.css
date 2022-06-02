@@ -254,19 +254,19 @@ footer {
   text-align: center;
 }
 .container_1_contact {
-  margin: 10%;
+  margin: var(--spacing-small);
 }
 #container_news_contact {
   border: solid #000 4px;
   background-color: aqua;
-  margin: 5%;
+  margin: var(--spacing-small);
 }
 #container_news_contact h1 {
-  margin: 5%;
+  margin: --spacing-small;
   text-align: center;
 }
 #container_news_contact p {
-  margin: 5%;
+  margin: var(--spacing-small);
 }
 #fake_news_contact {
   display: block;
