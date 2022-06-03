@@ -371,7 +371,7 @@ footer {
   margin-right: 1.5rem;
 }
 .ctaHeader {
-  color: #d5ff2c;
+  /* color: #d5ff2c; */
   font-size: var(--font-xxlarge);
   font-family: "Clash Grotesk", sans-serif;
   font-weight: 600;
@@ -393,7 +393,6 @@ footer {
   grid-column: 1 / 7;
   height: fit-content;
   background-color: #000;
-  border: solid 4px #d5ff2c;
 }
 .signupForm input {
   margin-bottom: 5%;
@@ -679,11 +678,11 @@ footer {
   display: grid;
   grid-template-columns: 12fr;
   column-gap: 1.5rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  /* margin-left: 1.5rem;
+  margin-right: 1.5rem; */
 }
 .ctaHeader {
-  color: #dd3123;
+  color: #fff;
   font-size: var(--font-xxlarge);
   font-family: "Clash Grotesk", sans-serif;
   font-weight: 600;
@@ -704,8 +703,8 @@ footer {
 .signupForm {
   grid-column: 1 / 7;
   height: fit-content;
-  background-color: #000;
-  border: solid 4px #dd3123;
+  background-color: #dd3123;
+  /* border: solid 4px #dd3123; */
 }
 .signupForm input {
   margin-bottom: 5%;
