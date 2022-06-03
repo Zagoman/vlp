@@ -1099,6 +1099,7 @@ footer {
   text-align: center;
   margin: 1em;
   font-family: "Clash Grotesk", sans-serif;
+  font-weight: 200;
 }
 #image_single_art {
   display: block;
@@ -1110,6 +1111,7 @@ footer {
   margin-left: 10%;
   margin-top: 1em;
   font-family: "Clash Grotesk", sans-serif;
+  font-weight: 200;
 }
 #origin_single_art {
   margin-left: 10%;
@@ -1117,8 +1119,9 @@ footer {
   font-family: "Poppins", sans-serif;
 }
 #text_single_art {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
   font-family: "Poppins", sans-serif;
 }
 #price_single_art {
