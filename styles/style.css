@@ -628,6 +628,10 @@ footer {
 }
 .container_1_contact p {
   font-family: "Poppins", sans-serif;
+  margin-top: 0.5em;
+}
+.container_1_contact #text {
+  margin-top: 1em;
 }
 .container_1_contact h2 {
   font-family: "Clash Grotesk", sans-serif;
@@ -679,7 +683,7 @@ footer {
   margin-right: 1.5rem;
 }
 .ctaHeader {
-  color: #d5ff2c;
+  color: #dd3123;
   font-size: var(--font-xxlarge);
   font-family: "Clash Grotesk", sans-serif;
   font-weight: 600;
@@ -701,28 +705,32 @@ footer {
   grid-column: 1 / 7;
   height: fit-content;
   background-color: #000;
-  border: solid 4px #d5ff2c;
+  border: solid 4px #dd3123;
 }
 .signupForm input {
   margin-bottom: 5%;
   height: 3rem;
   width: 100%;
-  border: solid 3px #d5ff2c;
+  border: solid 3px #dd3123;
   font-family: "Poppins", sans-serif;
 }
 .emailFlex {
   display: flex;
   flex-direction: column;
 }
-/* #signupBtn {
-  background-color: #d40000;
-  color: #fff;
-} */
 .signupImage {
   display: none;
   height: 100%;
   max-width: 100%;
   grid-column: 7 / 12;
+}
+#signupBtn {
+  background-image: url("/media/signUpBtn-01.svg");
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 10%;
+  cursor: pointer;
+  display: block;
 }
 @media only screen and (min-width: 485px) {
   .signupForm input {
