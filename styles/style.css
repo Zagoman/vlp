@@ -291,6 +291,13 @@ p {
 .deco-texture {
   display: none;
 }
+#short-about {
+  padding-block: var(--spacing-large);
+}
+#short-about h2 {
+  color: var(--color-red);
+}
+
 @media only screen and (min-width: 800px) {
   .exhibition-wrapper {
     display: grid;
@@ -316,6 +323,19 @@ p {
     width: 30vw;
     max-width: 400px;
     inset: auto -30% -10% auto;
+  }
+  #short-about h2 {
+    float: left;
+    color: var(--color-red);
+    display: block;
+    line-height: 0.9;
+    margin-right: var(--spacing-xsmall);
+  }
+  #short-about p {
+    display: block;
+    margin-left: var(--spacing-xxxlarge);
+    padding-top: var(--spacing-xsmall);
+    max-width: 80ch;
   }
 }
 /* ?End of home page */
