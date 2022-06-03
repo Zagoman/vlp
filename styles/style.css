@@ -294,57 +294,24 @@ footer {
 /* ?end of footer */
 
 /* BEGINNING OF ABOUT PAGE */
-.repeatText {
-  width: 100vw;
-  background-color: var(--color-primary);
-  overflow: hidden;
-  display: inline-block;
-}
-.repeatText span {
-  display: inline-block;
-  padding: 0px 40px 0px 40px;
-  color: var(--color-secondary);
-  animation: slide 30s linear infinite;
-  animation-duration: 30s;
-  animation-play-state: running;
-  overflow: hidden;
-  text-transform: uppercase;
-}
-.repeatText span:nth-child(1) {
-  animation-delay: 0s;
-}
-.repeatText span:nth-child(2) {
-  animation-delay: 0.6s;
-}
-.repeatText span:nth-child(3) {
-  animation-delay: 1.2s;
-}
-.repeatText span:nth-child(4) {
-  animation-delay: 1.8s;
-}
-.repeatText span:nth-child(5) {
-  animation-delay: 2.4s;
-}
-@keyframes slide {
-  0% {
-    transform: translateX(300%);
-  }
-  100% {
-    transform: translateX(-300%);
-  }
-}
 
 .community {
-  width: 100vw;
+  width: 100%;
   background-color: #dd3123;
+  padding-bottom: var(--spacing-medium);
 }
 .community p {
   max-width: 66ch;
   color: var(--color-secondary);
+  padding-left: var(--spacing-xsmall);
+  padding-right: var(--spacing-xsmall);
+  z-index: 100;
 }
 .community h2 {
   color: var(--color-secondary);
   text-transform: uppercase;
+  padding-top: var(--spacing-xsmall);
+  font-size: var(--font-largest);
 }
 
 .centered-header {
@@ -353,12 +320,31 @@ footer {
 .team {
   padding-top: var(--spacing-large);
 }
+.team,
+.container {
+  padding-left: var(--spacing-small);
+  padding-right: var(--spacing-small);
+}
+.valmescom,
+.container {
+  padding-left: var(--spacing-small);
+  padding-right: var(--spacing-small);
+}
+
 .teamgrid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: var(--spacing-xlarge);
   padding-top: var(--spacing-large);
+  padding-bottom: var(--spacing-large);
+}
+#marqueeFullwidth {
+  width: 100vw;
+  margin-left: -15%;
+}
+#marqueePadding {
+  margin-top: var(--spacing-large);
 }
 .teamgrid p {
   max-width: 66ch;
@@ -367,32 +353,50 @@ footer {
   margin: auto;
   border: var(--color-primary) solid 4px;
 }
-.valmescom {
+.valmescom p {
   max-width: 66ch;
 }
 .magda h3 {
   padding-bottom: var(--spacing-small);
+  font-family: var(--font-family_secondary);
+  font-size: var(--font-large);
+  text-transform: uppercase;
 }
 .alicja h3 {
   padding-bottom: var(--spacing-small);
+  font-family: var(--font-family_secondary);
+  font-size: var(--font-large);
+  text-transform: uppercase;
 }
 .bartek h3 {
   padding-bottom: var(--spacing-small);
+  font-family: var(--font-family_secondary);
+  font-size: var(--font-large);
+  text-transform: uppercase;
 }
 .logoCloud {
   display: flex;
   justify-content: center;
   padding-top: var(--spacing-medium);
+
+  padding-right: var(--spacing-xsmall);
+}
+.mfc,
+.values {
+  padding-top: var(--spacing-medium);
+  padding-bottom: var(--spacing-medium);
 }
 .logoCloud img {
-  width: 50vw;
+  width: 40vw;
+}
+.getintouch {
+  padding-top: var(--spacing-medium);
+}
+.ball {
+  display: inline-block;
+  margin-top: -10%;
 }
 
-@media only screen and (min-width: 699px) {
-  .teamgrid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 @media only screen and (min-width: 599px) {
   .logoCloud {
     justify-content: center;
@@ -402,7 +406,68 @@ footer {
     max-height: 100%;
   }
 }
+@media only screen and (min-width: 699px) {
+  .teamgrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .teamgrid p {
+    min-width: 120px;
+  }
+  .valmescom,
+  .container {
+    padding-left: var(--spacing-large);
+    padding-right: var(--spacing-large);
+  }
+  .values p,
+  .mfc p {
+    margin: auto;
+    min-width: 66ch;
+  }
+  .ball {
+    margin-left: 70%;
+    margin-top: -30%;
+  }
+  .community {
+    padding-left: var(--spacing-large);
+    margin-left: -10rem;
+    width: 100vw;
+    padding-right: var(--spacing-large);
+  }
+  .community p {
+    padding-left: var(--spacing-large);
+    padding-right: var(--spacing-large);
+    max-width: 66ch;
+  }
+
+  .team,
+  .container {
+    padding-left: var(--spacing-large);
+    padding-right: var(--spacing-large);
+  }
+  .community p {
+    max-width: 70%;
+  }
+}
+@media only screen and (min-width: 899px) {
+  .team,
+  .container {
+    padding-left: var(--spacing-xlarge);
+    padding-right: var(--spacing-xlarge);
+  }
+}
+@media only screen and (min-width: 1199px) {
+  .team,
+  .container {
+    padding-left: var(--spacing-xxlarge);
+    padding-right: var(--spacing-xxlarge);
+  }
+  .ball {
+    margin-top: -22%;
+  }
+}
+
 /* *** END OF ABOUT PAGE****** */
+
 /* ?beginning of single artwork page  */
 
 /* ?end of single artwork page  */
