@@ -7,3 +7,12 @@ const pastTitle = document.querySelector("#past-title");
 const pastMarquee1 = document.querySelector("#past-marquee");
 const pastMarquee2 = document.querySelector("#past-marquee2");
 const pastMarquee = new Marquee(pastTitle, pastMarquee1, pastMarquee2);
+
+const loader = document.querySelector(".loader");
+window.addEventListener("load", disappear);
+
+function disappear() {
+  loader.classList.remove(".hidden");
+  loader.classList.add(".disappear");
+  console.log("disappearworking");
+}

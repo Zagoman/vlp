@@ -203,6 +203,29 @@ p {
   line-height: 1;
 }
 /* ?end of Typography */
+
+/* ***PRELOADER starts */
+.loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preloader-img {
+  max-width: 100%;
+  width: 50vw;
+  margin: auto;
+}
+.disappear {
+  animation: disappear 0.3s forwards;
+}
+.pulsate {
+  animation: pulsate 2s infinite;
+}
+
+/* ***PRELOADER ENDS**** */
 /* ?Video Interaction on Hero */
 #video-canvas {
   width: 100%;
@@ -1199,14 +1222,6 @@ footer {
   .marquee2,
   .marquee-title {
     font-size: var(--font-xxxlarge);
-  }
-}
-@keyframes marqueeAnim {
-  0% {
-    transform: translateX(100vw);
-  }
-  100% {
-    transform: translateX(-100vw);
   }
 }
 
