@@ -315,6 +315,7 @@ p {
   .exhibition-wrapper div {
     grid-column: 1/5;
     position: relative;
+    padding-top: var(--spacing-xlarge);
   }
   .deco-texture {
     display: block;
