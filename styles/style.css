@@ -1100,6 +1100,7 @@ footer {
   margin: 1em;
   font-family: "Clash Grotesk", sans-serif;
   font-weight: 200;
+  color: var(--color-red);
 }
 #image_single_art {
   display: block;
