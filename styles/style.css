@@ -718,6 +718,7 @@ footer {
 /* ? beginning of contact page */
 #title_contact {
   text-align: center;
+  color: var(--color-red);
 }
 .container_1_contact {
   margin: var(--spacing-small);
