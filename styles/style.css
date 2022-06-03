@@ -1096,6 +1096,7 @@ footer {
 #title_single_art {
   text-align: center;
   margin: 1em;
+  font-family: "Clash Grotesk", sans-serif;
 }
 #image_single_art {
   display: block;
@@ -1106,21 +1107,28 @@ footer {
 #artists_name_single_art {
   margin-left: 10%;
   margin-top: 1em;
+  font-family: "Clash Grotesk", sans-serif;
 }
 #origin_single_art {
   margin-left: 10%;
   margin-bottom: 2em;
+  font-family: "Poppins", sans-serif;
 }
 #text_single_art {
   margin-left: 10%;
   margin-right: 10%;
+  font-family: "Poppins", sans-serif;
 }
 #price_single_art {
   margin-left: 10%;
+  margin-top: 1em;
+  font-family: "Clash Grotesk", sans-serif;
+  font-weight: 600;
 }
 #spec_single_art {
   margin-left: 10%;
   margin-top: 1em;
+  font-family: "Poppins", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .container_1_single_art {
@@ -1152,6 +1160,17 @@ footer {
 .container_1_contact {
   margin: var(--spacing-small);
 }
+.container_1_contact p {
+  font-family: "Poppins", sans-serif;
+  margin-top: 0.5em;
+}
+.container_1_contact #text {
+  margin-top: 1em;
+}
+.container_1_contact h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
 #container_news_contact {
   border: solid #000 4px;
   background-color: aqua;
@@ -1159,21 +1178,36 @@ footer {
 }
 #container_news_contact h1 {
   margin: --spacing-small;
-  text-align: center;
+  border: solid #dd3123 4px;
+  /* background-color; */
+  margin: 10%;
 }
+/* #container_news_contact h1 {
+  margin: 10%;
+  text-align: center;
+  font-family: "Clash Grotesk", sans-serif;
+  font-weight: 600;
+} */
 #container_news_contact p {
   margin: var(--spacing-small);
+  /* margin: 10%;
+  font-family: "Poppins", sans-serif; */
 }
 #fake_news_contact {
   display: block;
   border: solid #000 4px;
   margin-top: 2%;
   margin-bottom: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 #map_contact {
-  margin: 5%;
+  margin: 10%;
+}
+#map_contact h3 {
+  font-family: "Clash Grotesk", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10%;
 }
 @media screen and (min-width: 768px) {
   #map_contact {
@@ -1181,7 +1215,110 @@ footer {
     align-items: center;
   }
 }
-
+/* ***Beginning of sign-up form ****** */
+.signupContainer {
+  display: grid;
+  grid-template-columns: 12fr;
+  column-gap: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.ctaHeader {
+  color: #dd3123;
+  font-size: var(--font-xxlarge);
+  font-family: "Clash Grotesk", sans-serif;
+  font-weight: 600;
+}
+.ctaBody {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: var(--color-secondary);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.signupForm-content {
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  padding-bottom: 1.5em;
+}
+.signupForm {
+  grid-column: 1 / 7;
+  height: fit-content;
+  background-color: #000;
+  border: solid 4px #dd3123;
+}
+.signupForm input {
+  margin-bottom: 5%;
+  height: 3rem;
+  width: 100%;
+  border: solid 3px #dd3123;
+  font-family: "Poppins", sans-serif;
+}
+.container-button-contact {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.button-contact {
+  position: relative;
+  /* inset: auto 50% 10vh auto; */
+  /* transform: translateX(50%); */
+  padding: 1rem 3rem;
+  margin: auto;
+  background-color: #dd3123;
+  font-family: var(--font-family_secondary);
+  font-size: var(--font-large);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  text-shadow: 3px 3px 0px var(--color-primary);
+  -webkit-text-stroke: 1px var(--color-primary);
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 300ms var(--animation-easing);
+}
+.button-contact:hover {
+  --color-red: #a92519;
+}
+.emailFlex {
+  display: flex;
+  flex-direction: column;
+}
+.signupImage {
+  display: none;
+  height: 100%;
+  max-width: 100%;
+  grid-column: 7 / 12;
+}
+#signupBtn {
+  background-image: url("/media/signUpBtn-01.svg");
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 10%;
+  cursor: pointer;
+  display: block;
+}
+@media only screen and (min-width: 485px) {
+  .signupForm input {
+    width: 100%;
+  }
+  /*   #signupBtn {
+    width: 40%;
+    justify-items: flex-end;
+  }
+  .emailFlex {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  } */
+}
+@media only screen and (min-width: 799px) {
+  .signupImage {
+    display: block;
+  }
+}
+/* End of sign-up form  */
 /* ? end of contact page */
 /* ?Beginning of Marquee */
 .marquee-wrapper {
