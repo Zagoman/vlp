@@ -532,7 +532,9 @@ footer {
   display: inline-block;
   margin-top: -10%;
 }
-
+#about_team-section {
+  padding-top: var(--spacing-xxxlarge);
+}
 @media only screen and (min-width: 599px) {
   .logoCloud {
     justify-content: center;
@@ -549,11 +551,11 @@ footer {
   .teamgrid p {
     min-width: 120px;
   }
-  .valmescom,
+  /* .valmescom,
   .container {
     padding-left: var(--spacing-large);
     padding-right: var(--spacing-large);
-  }
+  } */
   .values p,
   .mfc p {
     margin: auto;
@@ -565,7 +567,7 @@ footer {
   }
   .community {
     padding-left: var(--spacing-large);
-    margin-left: -10rem;
+    /* margin-left: -10rem; */
     width: 100vw;
     padding-right: var(--spacing-large);
   }
@@ -575,28 +577,28 @@ footer {
     max-width: 66ch;
   }
 
-  .team,
+  /* .team,
   .container {
     padding-left: var(--spacing-large);
     padding-right: var(--spacing-large);
-  }
+  } */
   .community p {
     max-width: 70%;
   }
 }
 @media only screen and (min-width: 899px) {
-  .team,
+  /* .team,
   .container {
     padding-left: var(--spacing-xlarge);
     padding-right: var(--spacing-xlarge);
-  }
+  } */
 }
 @media only screen and (min-width: 1199px) {
-  .team,
+  /* .team,
   .container {
     padding-left: var(--spacing-xxlarge);
     padding-right: var(--spacing-xxlarge);
-  }
+  } */
   .ball {
     margin-top: -22%;
   }
