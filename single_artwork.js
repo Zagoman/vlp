@@ -18,14 +18,26 @@ fetch(url)
   });
 
 function showProduct(product) {
-  // // grab the template\
-  // const template = document.querySelector("#template2").content;
-  // // clone the template
-  // const copy = template.cloneNode(true);
-  // // change content
-  document.querySelector("#title_single_art").textContent = product.origin;
+  document.querySelector("#title_single_art").textContent =
+    product.title.rendered;
   document.querySelector("#artists_name_single_art").textContent =
-    product.materials;
+    product.artists;
+  document.querySelector("#origin_single_art").textContent = product.origin;
+  document.querySelector(
+    "#material_single_art"
+  ).textContent = `MATERIALS: ${product.materials}`;
+  document.querySelector(
+    "#dimensions_single_art"
+  ).textContent = `DIMENSIONS: ${product.dimensions}`;
+  document.querySelector(
+    "#price_single_art"
+  ).textContent = `Price: ${product.price}DKK`;
+  document.querySelector(
+    "#date_single_art"
+  ).textContent = `YEAR: ${product.year_created}`;
+  document.querySelector("#text_single_art").textContent = product.description;
+
+  document.querySelector("img").src = product.images[0].guid;
   // copy
   //   .querySelector("a")
   //   .setAttribute("href", `single_artwork.html?id=${product.id}`);
