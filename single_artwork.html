@@ -12,7 +12,27 @@
     />
   </head>
   <body>
-    <header></header>
+    <header>
+      <section id="navbar-section">
+        <div class="container">
+          <div class="logo">
+            <img src="media/vlp-logo.svg" alt="logo" />
+          </div>
+          <div id="navbar" class="hidden">
+            <ul class="nav-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./exhibition.html">Exhibitions</a></li>
+              <li><a href="./artworks.html">Artworks for sale</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="menu-btn">
+            <div class="menu-btn-burger"></div>
+          </div>
+        </div>
+      </section>
+    </header>
     <main>
       <h1 class="fs_xxlarge" id="title_single_art">Title of the artwork</h1>
       <div class="container_1_single_art">
@@ -50,19 +70,19 @@
         <nav>
           <ul id="footer-nav-bar">
             <li>
-              <a href="#">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li>
-              <a href="#">Exhibitions</a>
+              <a href="./exhibition.html">Exhibitions</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="./about.html">About</a>
             </li>
             <li>
-              <a href="#">Shop</a>
+              <a href="./artworks.html">Artworks for sale</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="./contact.html">Contact</a>
             </li>
           </ul>
         </nav>
@@ -89,5 +109,6 @@
       </div>
     </footer>
     <script src="single_artwork.js"></script>
+    <script src="script-burger.js"></script>
   </body>
 </html>
