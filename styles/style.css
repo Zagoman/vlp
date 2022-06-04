@@ -156,6 +156,7 @@ p {
   font-family: var(--font-family_secondary);
   font-size: var(--font-medium);
   font-weight: 800;
+  text-align: center;
   text-transform: uppercase;
   color: var(--color-secondary);
   text-shadow: 2px 2px 0px var(--color-primary);
@@ -251,7 +252,8 @@ p {
   padding: 1rem 3rem;
   background-color: var(--color-red);
   font-family: var(--font-family_secondary);
-  font-size: var(--font-large);
+  font-size: var(--font-medium);
+  text-align: center;
   font-weight: 800;
   text-transform: uppercase;
   color: var(--color-secondary);
@@ -269,6 +271,9 @@ p {
 .exhibition-wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  padding-bottom: var(--spacing-large);
+  max-width: 1440px;
+  margin-inline: auto;
 }
 .exhibition-wrapper img {
   order: -1;
