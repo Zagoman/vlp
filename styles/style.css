@@ -448,7 +448,7 @@ footer {
   color: var(--color-secondary);
   text-transform: uppercase;
   padding-top: var(--spacing-xsmall);
-  font-size: var(--font-largest);
+  font-size: var(--font-xxlarge);
 }
 
 .centered-header {
@@ -1378,7 +1378,7 @@ footer {
 
 .marquee,
 .marquee2 {
-  font-size: var(--font-xxlarge);
+  font-size: var(--font-xlarge);
   color: var(--color-secondary);
   font-weight: 600;
   text-transform: uppercase;
