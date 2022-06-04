@@ -1223,11 +1223,7 @@ footer {
 }
 /* ***Beginning of sign-up form ****** */
 .signupContainer {
-  display: grid;
-  grid-template-columns: 12fr;
-  column-gap: 1.5rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-inline: auto;
 }
 .ctaHeader {
   color: #dd3123;
