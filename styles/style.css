@@ -1429,7 +1429,7 @@ footer {
 }
 .artworks_grid {
   display: grid;
-  gap: 20px;
+  gap: var(--spacing-small);
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 #PLcart {
@@ -1465,4 +1465,12 @@ footer {
 #artworks_slash {
   margin-left: 3%;
   margin-right: 3%;
+}
+#artworks-wrapper {
+  padding-top: var(--spacing-xxxlarge);
+}
+@media only screen and (min-width: 800px) {
+  .artworks_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
