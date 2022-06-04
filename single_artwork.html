@@ -6,9 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vi Lever På Polsk</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://api.fontshare.com/css?f=clash-grotesk@500,600,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
+    <header>
+      <section id="navbar-section">
+        <div class="container">
+          <div class="logo">
+            <img src="media/vlp-logo.svg" alt="logo" />
+          </div>
+          <div id="navbar" class="hidden">
+            <ul class="nav-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./exhibition.html">Exhibitions</a></li>
+              <li><a href="./artworks.html">Artworks for sale</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="menu-btn">
+            <div class="menu-btn-burger"></div>
+          </div>
+        </div>
+      </section>
+    </header>
     <main>
       <h1 class="fs_xxlarge" id="title_single_art">Title of the artwork</h1>
       <div class="container_1_single_art">
@@ -22,21 +46,21 @@
         <div class="container_2_single_art">
           <h2 class="fs_xlarge" id="artists_name_single_art">Artist Name</h2>
           <div id="origin_single_art">origin</div>
-          <p class="fs_medium" id="text_single_art">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-            lobortis. Ut commodo efficitur neque.
-          </p>
-          <div class="fs_medium" id="price_single_art">Price:</div>
           <div class="fs_medium" id="spec_single_art">
             <div id="material_single_art">MATERIALS: Oil on canvas</div>
             <div id="dimensions_single_art">DIMENSIONS: 1000 x 850</div>
             <div id="date_single_art">YEAR: 2021</div>
           </div>
+          <div class="fs_medium" id="price_single_art">Price:</div>
         </div>
       </div>
+      <p class="fs_medium" id="text_single_art">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+        libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Curabitur tempus urna at turpis condimentum lobortis. Ut commodo
+        efficitur neque.
+      </p>
     </main>
     <footer>
       <div class="footer-logo">
@@ -46,19 +70,19 @@
         <nav>
           <ul id="footer-nav-bar">
             <li>
-              <a href="#">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li>
-              <a href="#">Exhibitions</a>
+              <a href="./exhibition.html">Exhibitions</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="./about.html">About</a>
             </li>
             <li>
-              <a href="#">Shop</a>
+              <a href="./artworks.html">Artworks for sale</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="./contact.html">Contact</a>
             </li>
           </ul>
         </nav>
@@ -84,6 +108,7 @@
         <p id="footer-cvr">CVR: 12345678</p>
       </div>
     </footer>
-    <!-- <script src="video-sequence.js"></script> -->
+    <script src="single_artwork.js"></script>
+    <script src="script-burger.js"></script>
   </body>
 </html>

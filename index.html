@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vi Lever På Polsk</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/splide-core.min.css">
     <link rel="stylesheet" href="styles/style.css" />
-    <link
+    <!-- <link
       href="https://api.fontshare.com/css?f=clash-grotesk@500,600,700&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"></script>
   </head>
   <body>
     <header>
@@ -22,10 +24,10 @@
           <div id="navbar" class="hidden">
             <ul class="nav-links">
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Exhibitions</a></li>
-              <li><a href="#">Artworks for sale</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./exhibition.html">Exhibitions</a></li>
+              <li><a href="./artworks.html">Artworks for sale</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="menu-btn">
@@ -66,7 +68,78 @@
         </button>
         <a class="button-enter" href="#" type="button"> enter the gallery </a>
       </section>
-      <section class="signupContainer container">
+      <section id="short-about" class="container">
+        <article>
+        <h2 class="fs_xlarge">Vi Lever På Polsk</h2>
+        <p>is an artist-run gallery and platform founded in November 2020 by two Polish visual artists based in Copenhagen: magda Buczek and Bartek Arobal Kociemba. The team consists also of Alicja Peszkowska - Copenhagen based social strategist. </p>
+        </article>
+      </section>
+      <section>
+        <div class="marquee-wrapper">
+          <h2 class="marquee" id="about-marquee"></h2>
+          <div class="marquee2" id="about-marquee2"></div>
+          <div class="marquee-title" id="about-title">Current Exhibition</div>
+        </div>
+        <div class="exhibition-wrapper container">
+          <div>
+            <h2 class="fs_largest">Tak Tak</h2>
+            <span class="on-view">On View</span>
+            <span class="view-dates">29.04.2022.-13.05.2022.</span>
+            <span class="curated-tag">Curated by Marta Czyż and Vi Lever På Polsk</span>
+            <a href="./exhibition.html" class="button">View the exhibition</a>
+            <img src="./media/texture1.png" alt="texture" class="deco-texture">
+          </div>
+          <img src="./media/gallery-image.jpg" alt="Exhibition Poster">
+        </div>
+      </section>
+      <section>
+        <div class="marquee-wrapper" >
+            <h2 class="marquee" id="past-marquee"></h2>
+            <div class="marquee2" id="past-marquee2"></div>
+            <div class="marquee-title" id="past-title">Past-events</div>
+          </div>
+          <div class="splide container" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><img src="./media/gallery-image.jpg" alt="gallery"></li>
+                <li class="splide__slide"><img src="./media/gallery-image.jpg" alt="gallery"></li>
+                <li class="splide__slide"><img src="./media/gallery-image.jpg" alt="gallery"></li>
+                <li class="splide__slide"><img src="./media/gallery-image.jpg" alt="gallery"></li>
+                <li class="splide__slide"><img src="./media/gallery-image.jpg" alt="gallery"></li>
+              </ul>
+            </div>
+            <div class="splide__arrows">
+
+              <button class="splide__arrow splide__arrow--next"><svg
+                width="54"
+                height="62"
+                viewBox="0 0 54 62"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.0017395 61.6005L53.018 30.6365L9.19998e-06 -8.44968e-06L8.12764e-06 12.2662L31.1597 30.6365L0.0017406 49.0649L0.0017395 61.6005Z"
+                  fill="currentColor"
+                />
+              </svg></button>
+              <button class="splide__arrow splide__arrow--prev"><svg
+                width="54"
+                height="63"
+                viewBox="0 0 54 63"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M53.0489 0.842682L0.0325928 31.8067L53.0506 62.4432V50.1769L21.8909 31.8067L53.0489 13.3783V0.842682Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            </div>
+          </div>
+
+       </section> 
+       <section class="signupContainer container">
         <div class="signupForm">
           <div class="signupForm-content">
             <form action="submit"></form>
@@ -108,20 +181,6 @@
           </div>
         </div>
       </section>
-      <section id="slider">
-        <div class="cards-wrapper">
-          <div class="cards"></div>
-        </div>
-        <button class="prev-card">Prev</button>
-        <button class="next-card">Next</button>
-      </section>
-      <section>
-        <div class="marquee-wrapper">
-          <h2 class="marquee" id="about-marquee"></h2>
-          <div class="marquee2" id="about-marquee2"></div>
-          <div class="marquee-title" id="about-title">About</div>
-        </div>
-      </section>
     </main>
     <footer>
       <div class="footer-logo">
@@ -134,16 +193,16 @@
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">Exhibitions</a>
+              <a href="./exhibition.html">Exhibitions</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="./about.html">About</a>
             </li>
             <li>
-              <a href="#">Shop</a>
+              <a href="./artworks.html">Artworks for sale</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="./contact.html">Contact</a>
             </li>
           </ul>
         </nav>
@@ -171,7 +230,6 @@
     </footer>
     <script src="video-sequence.js"></script>
     <script src="script-burger.js"></script>
-    <script src="Slider.js"></script>
     <script src="Marquee.js"></script>
     <script src="index.js"></script>
   </body>

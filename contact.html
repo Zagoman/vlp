@@ -6,29 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vi Lever På Polsk</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://api.fontshare.com/css?f=clash-grotesk@500,600,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
+    <header><section id="navbar-section">
+      <div class="container">
+        <div class="logo">
+          <img src="media/vlp-logo.svg" alt="logo" />
+        </div>
+        <div id="navbar" class="hidden">
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./exhibition.html">Exhibitions</a></li>
+            <li><a href="./artworks.html">Artworks for sale</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-btn">
+          <div class="menu-btn-burger"></div>
+        </div>
+      </div>
+    </section></header>
     <main>
       <section>
         <div class="container">
           <h1 class="fs_3xlarge" id="title_contact">CONTACT</h1>
           <div class="container_1_contact">
-            <h2 class="fs_xlarge">By email:</h2>
+            <p class="fs_medium">By email:</p>
             <p class="fs_medium">vileverpapolsk@gmail.com</p>
             <p class="fs_medium" id="text">
               or drop us a message via
               <a href="https://www.instagram.com/vileverpapolsk/">Instagram</a>
+              <p class="fs_medium">@vileverpapolsk</p>
+
             </p>
           </div>
-          <div id="container_news_contact">
-            <h1 class="fs_large">Be notified about new exhibitions!</h1>
-            <p>
-              Sign up to our newsletter so you don’t miss any new exhibitions
-              and events.
-            </p>
-            <div id="fake_news_contact">Email address...</div>
-            <div id="news_button_contact">SIGN UP</div>
+          <section class="signupContainer">
+            <div class="signupForm">
+              <div class="signupForm-content">
+                <form action="submit"></form>
+                <h2 class="ctaHeader">Be notified about new exhibitions!</h2>
+                <p class="ctaBody">
+                  Sign up to our newsletter so you'll get the latest updates on
+                  new exhibitions and events.
+                </p>
+                <div class="emailFlex">
+                  <label for="email">
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      autocomplete="on"
+                      placeholder="   Your email address"
+                    />
+                  </label>
+                </div>
+                <div class="container-button-contact">
+                <a class="button-contact" href="#" type="button"> Sign up </a>
+              </div>
+              </div>
+            </div>
+            <!-- <div class="signupImage">
+              <img
+                src="media/fillimage.jpeg"
+                alt="Picture from Vi lever Pa Polsk's gallery"
+              />
+            </div> -->
+          </section>
+          <div class="marquee-wrapper">
+            <h2 class="marquee" id="about-marquee"></h2>
+            <div class="marquee2" id="about-marquee2"></div>
+            <div class="marquee-title" id="about-title">Find us here</div>
           </div>
 
           <section id="map_contact">
@@ -62,16 +114,16 @@
         <nav>
           <ul id="footer-nav-bar">
             <li>
-              <a href="#">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li>
-              <a href="#">Exhibitions</a>
+              <a href="./exhibition.html">Exhibitions</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="./about.html">About</a>
             </li>
             <li>
-              <a href="#">Shop</a>
+              <a href="./artworks.html">Artworks for sale</a>
             </li>
             <li>
               <a href="#">Contact</a>
@@ -100,7 +152,7 @@
         <p id="footer-cvr">CVR: 12345678</p>
       </div>
     </footer>
-    <!-- <script src="video-sequence.js"></script> -->
+    <script src="script-burger.js"></script>
     <script src="Marquee.js"></script>
     <script src="contact.js"></script>
   </body>

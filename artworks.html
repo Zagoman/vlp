@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artworks for sale - Vi Lever Pa Polsk</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <section id="navbar-section">
+        <div class="container">
+          <div class="logo">
+            <img src="media/vlp-logo.svg" alt="logo" />
+          </div>
+          <div id="navbar" class="hidden">
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Exhibitions</a></li>
+              <li><a href="#">Artworks for sale</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="menu-btn">
+            <div class="menu-btn-burger"></div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div id="artworks_title_wrapper">
+        <h1 class="fs_3xlarge title_artworks">ARTWORKS FOR SALE</h1>
+      </div>
+      <div class="wrapper_artworks">
+        <section class="artworks_grid">
+          <!--  -->
+
+          <template id="template">
+            <article id="PLcart">
+              <a href="#"
+                >.
+                <img src="./media/gallery-image.jpg" class="hoverImg" alt="" />
+              </a>
+              <p class="artworks_piece_name fs_xlarge">Three Black Eggs</p>
+              <div id="artwork_details_grid" class="fs_medium">
+                <div class="" id="artworks_artist">Bartek Magda</div>
+                <div id="artworks_slash">/</div>
+                <div id="artworks_year">2012</div>
+              </div>
+            </article>
+          </template>
+
+          <!-- </template> -->
+          <!--  -->
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <a href="#"> <img alt="Logo" src="/media/logo_1.png" /></a>
+      </div>
+      <div id="footer-mobile-container">
+        <nav>
+          <ul id="footer-nav-bar">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Exhibitions</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Shop</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="footer-SoMe">
+          <div>
+            <div class="footer-SoMe-container">
+              <img src="/media/logo_fb.svg" alt="logo of Facebook" />
+              <p>Follow us on <a href="#">Facebook</a></p>
+            </div>
+            <div class="footer-SoMe-container">
+              <img src="/media/logo_IG.svg" alt="logo of Instagram" />
+              <p>Follow us on <a href="#">Instagram</a></p>
+            </div>
+            <div class="footer-SoMe-container">
+              <img src="/media/logo_mail.svg" alt="logo of a letter" />
+              <p>Sign up to the <a href="#">Newsletter</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer-location">
+        <p id="footer-address">Eliasgade 10, 2300 Copenhagen</p>
+        <p id="footer-cvr">CVR: 12345678</p>
+      </div>
+    </footer>
+    <script src="script-burger.js"></script>
+    <script src="Marquee.js"></script>
+    <script src="artworks.js"></script>
+  </body>
+</html>

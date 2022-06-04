@@ -1,3 +1,15 @@
+/*
+
+      <section id="slider">
+        <div class="cards-wrapper">
+          <div class="cards"></div>
+        </div>
+        <button class="prev-card">Prev</button>
+        <button class="next-card">Next</button>
+      </section>
+
+*/
+
 class Slider {
   constructor(parent) {
     this._images = [];
