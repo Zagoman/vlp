@@ -1434,3 +1434,7 @@ footer {
 #artworks_piece_name {
   font-weight: 600;
 }
+#artworks_slash {
+  margin-left: 3%;
+  margin-right: 3%;
+}
