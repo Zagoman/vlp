@@ -12,15 +12,17 @@
       <section id="navbar-section">
         <div class="container">
           <div class="logo">
-            <img src="media/vlp-logo.svg" alt="logo" />
+            <a href="./index.html">
+              <img src="media/vlp-logo.svg" alt="logo" />
+            </a>
           </div>
           <div id="navbar" class="hidden">
             <ul class="nav-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Exhibitions</a></li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./exhibition.html">Exhibitions</a></li>
               <li><a href="#">Artworks for sale</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="menu-btn">
@@ -30,54 +32,55 @@
       </section>
     </header>
     <main>
-      <div id="artworks_title_wrapper">
-        <h1 class="fs_3xlarge title_artworks">ARTWORKS FOR SALE</h1>
-      </div>
-      <div class="wrapper_artworks">
-        <section class="artworks_grid">
-          <!--  -->
+      <section id="artworks-wrapper">
+        <div id="artworks_title_wrapper">
+          <h1 class="fs_3xlarge title_artworks">ARTWORKS FOR SALE</h1>
+        </div>
+        <div class="wrapper_artworks">
+          <div class="artworks_grid">
+            <!--  -->
 
-          <template id="template">
-            <article id="PLcart">
-              <a href="#"
-                >.
-                <img src="./media/gallery-image.jpg" class="hoverImg" alt="" />
-              </a>
-              <p class="artworks_piece_name fs_xlarge">Three Black Eggs</p>
-              <div id="artwork_details_grid" class="fs_medium">
-                <div class="" id="artworks_artist">Bartek Magda</div>
-                <div id="artworks_slash">/</div>
-                <div id="artworks_year">2012</div>
-              </div>
-            </article>
-          </template>
-
-          <!-- </template> -->
-          <!--  -->
-        </section>
-      </div>
+            <!-- </template> -->
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <template id="template">
+        <article id="PLcart">
+          <a href="#"
+            >.
+            <img src="./media/gallery-image.jpg" class="hoverImg" alt="" />
+          </a>
+          <p class="artworks_piece_name fs_xlarge">Three Black Eggs</p>
+          <div id="artwork_details_grid" class="fs_medium">
+            <div class="" id="artworks_artist">Bartek Magda</div>
+            <div id="artworks_slash">/</div>
+            <div id="artworks_year">2012</div>
+          </div>
+        </article>
+      </template>
     </main>
     <footer>
       <div class="footer-logo">
-        <a href="#"> <img alt="Logo" src="/media/logo_1.png" /></a>
+        <a href="./index.html"> <img alt="Logo" src="/media/vlp-logo.svg" /></a>
       </div>
       <div id="footer-mobile-container">
         <nav>
           <ul id="footer-nav-bar">
             <li>
-              <a href="#">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li>
-              <a href="#">Exhibitions</a>
+              <a href="./exhibition.html">Exhibitions</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="./about.html">About</a>
             </li>
             <li>
-              <a href="#">Shop</a>
+              <a href="#">Artworks for sale</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="./contact.html">Contact</a>
             </li>
           </ul>
         </nav>
