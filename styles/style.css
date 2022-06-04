@@ -1416,3 +1416,48 @@ footer {
 }
 
 /* ?End of Marquee */
+
+/* beginning of general artwork */
+.wrapper_artworks {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.artworks_grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+#PLcart {
+  text-align: center;
+  align-items: center;
+}
+#PLcart img {
+  width: 100%;
+  border: 2px solid black;
+}
+#PLcart a {
+  text-decoration: inherit;
+}
+#PLcart a:visited {
+  color: black;
+}
+#PLcart a:link {
+  color: black;
+}
+#artwork_details_grid {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  color: var(--color-red);
+}
+#artworks_title_wrapper {
+  text-align: center;
+  color: var(--color-red);
+}
+#artworks_piece_name {
+  font-weight: 600;
+}
+#artworks_slash {
+  margin-left: 3%;
+  margin-right: 3%;
+}
