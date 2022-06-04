@@ -1186,6 +1186,9 @@ footer {
 }
 /* ?end of single artwork page  */
 /* ? beginning of contact page */
+#contact-page_section {
+  padding-top: var(--spacing-xxxlarge);
+}
 #title_contact {
   text-align: center;
   color: var(--color-red);
