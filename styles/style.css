@@ -278,7 +278,7 @@ p {
   align-items: flex-start;
   padding-inline: var(--spacing-small);
 }
-.exhibition-wrapper img {
+.exhibition-wrapper > img {
   border: 1px solid black;
 }
 .exhibition-wrapper h2 {
@@ -303,6 +303,28 @@ p {
 }
 #short-about h2 {
   color: var(--color-red);
+}
+.splide {
+  position: relative;
+  padding-block: var(--spacing-large);
+}
+.splide__arrow {
+  background: none;
+  border: none;
+  color: var(--color-red);
+  transition: color 300ms var(--animation-easing);
+  position: absolute;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.splide__arrow:hover {
+  color: #a92519;
+}
+.splide__arrow--next {
+  inset: 50% 0 auto auto;
+}
+.splide__arrow--prev {
+  inset: 50% auto auto 0;
 }
 
 @media only screen and (min-width: 800px) {

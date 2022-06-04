@@ -9,6 +9,7 @@ const pages = {
   contact: "./contact.html",
   artworks: "./artworks.html",
 };
+
 let canvas;
 let video;
 let videoSrcs = ["1_video.mp4"];
@@ -32,6 +33,7 @@ function setup() {
 function draw() {
   image(video, width / 2, height / 2, innerHeight * aspectRatio, innerHeight);
 }
+
 function vidLoad() {
   // video.size(window.innerWidth, window.innerHeight);
   video.size(width, height);
@@ -46,6 +48,7 @@ function vidLoad() {
   video.elt.classList.add("placeholder-video");
   console.log(video.elt.classList);
 }
+
 function nexVid() {
   if (curId < 6) {
     curId++;
@@ -58,6 +61,7 @@ function nexVid() {
   console.log(video.elt.classList);
   updateUI();
 }
+
 function prevVid() {
   if (curId > 2) {
     curId--;
@@ -69,6 +73,7 @@ function prevVid() {
   video.hide();
   updateUI();
 }
+
 function updateUI() {
   switch (curId) {
     case 0:
