@@ -77,6 +77,7 @@
 
   /* !colors */
   --color-primary: #000;
+  --color-off-white: #f9f8f7;
   --color-secondary: #fff;
   --color-accent: #d5ff2c;
   --color-blue: #4e5ce5;
@@ -749,6 +750,7 @@ footer {
   right: 0;
   bottom: auto;
   z-index: 1000;
+  transition: background-color 300ms var(--animation-easing);
 }
 
 #navbar-section .container {
@@ -762,7 +764,7 @@ footer {
   max-width: 80px;
   min-width: 60px;
   width: 10vw;
-  margin-left: var(--spacing-small);
+  /* margin-left: var(--spacing-small); */
 }
 
 .nav-links {
@@ -778,9 +780,12 @@ footer {
   font-weight: bolder;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--color-secondary);
+  color: var(--color-red);
 }
-
+.nav-opacity {
+  /* background-color: var(--color-off-white); */
+  background-color: rgba(249, 248, 247, 0.98);
+}
 .menu-btn {
   position: relative;
   display: flex;
@@ -795,8 +800,9 @@ footer {
 .menu-btn-burger {
   width: 3.1rem;
   height: 0.4rem;
-  background: var(--color-secondary);
-  transition: all 0.5s ease-in-out;
+  background: var(--color-red);
+  transition: all 0.3s var(--animation-easing);
+  /* border: 1px solid var(--color-primary); */
 }
 
 .menu-btn-burger::before,
@@ -805,8 +811,9 @@ footer {
   position: absolute;
   width: 3.1rem;
   height: 0.4rem;
-  background: var(--color-secondary);
-  transition: all 0.5s ease-in-out;
+  background: var(--color-red);
+  /* border: 1px solid var(--color-primary); */
+  transition: all 0.3s var(--animation-easing);
 }
 
 .menu-btn-burger::before {
@@ -830,13 +837,16 @@ footer {
 
 .visible {
   visibility: visible;
-  opacity: 1;
-  transition: opacity 0.5s linear;
+  /* opacity: 1; */
+  transition: opacity 0.3s var(--animation-easing);
 }
 .hidden {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 0.5s, opacity 0.5s linear;
+  transition: visibility 0s 0.5s, opacity 0.3s var(--animation-easing);
+}
+.nav-links a {
+  color: var(--color-red);
 }
 
 @media screen and (max-width: 1050px) {
