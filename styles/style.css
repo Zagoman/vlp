@@ -235,6 +235,11 @@ p {
 .button-prev {
   inset: 50vh auto auto 1rem;
 }
+.placeholder-video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
 /* ?End of Video Interaction on Hero */
 
 /* ?Hero Section */
