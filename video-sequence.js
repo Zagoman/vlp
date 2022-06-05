@@ -51,6 +51,7 @@ function vidLoad() {
     video.volume(0);
     video.loop();
   } else {
+    video.pause();
     video.play();
     video.onended(nexVid);
   }
