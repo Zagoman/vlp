@@ -25,3 +25,15 @@ const splide = new Splide(".splide", {
 });
 
 splide.mount();
+/* const loader = document.querySelector(".loader");
+window.addEventListener("load", disappear);
+
+function disappear() {
+  loader.classList.add(".disappear");
+  console.log("disappearworking");
+} */
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+  loader.classList.add("#deletethis");
+  console.log("working");
+});
