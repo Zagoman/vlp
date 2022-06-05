@@ -634,6 +634,9 @@ footer a:hover {
 /* *** END OF ABOUT PAGE****** */
 
 /* ?beginning of single artwork page  */
+#single-artwork-page {
+  padding-top: var(--spacing-xxlarge);
+}
 #current-exhibition_hero {
   height: 100vh;
   padding-top: var(--spacing-xxlarge);
