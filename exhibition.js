@@ -16,6 +16,7 @@ class Exhibition {
         this._ShowPastExhibitions(exhibition);
       }
     });
+    hideLoader();
 
     this._eventsData.forEach((event) => this._ShowEvents(event));
   }
