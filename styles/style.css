@@ -552,6 +552,9 @@ footer a:hover {
 #about_team-section {
   padding-top: var(--spacing-xxxlarge);
 }
+#about_team-section h1 {
+  color: var(--color-red);
+}
 @media only screen and (min-width: 599px) {
   .logoCloud {
     justify-content: center;
