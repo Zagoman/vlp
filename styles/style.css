@@ -1439,4 +1439,15 @@ iframe[title="google-maps"] {
 .overflow--hidden {
   overflow: hidden;
 }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.3);
+    filter: blur(4px);
+    filter: invert(50%) sepia(100%) saturate(4) hue-rotate(30deg);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
 /* ?Official pre-loader ends */
