@@ -314,6 +314,13 @@ p {
   position: relative;
   padding-block: var(--spacing-large);
 }
+.splide img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--color-primary);
+}
 .splide__arrow {
   background: none;
   border: none;
@@ -324,7 +331,7 @@ p {
   cursor: pointer;
 }
 .splide__arrow:hover {
-  color: #a92519;
+  color: var(--color-blue);
 }
 .splide__arrow--next {
   inset: 50% 0 auto auto;
@@ -627,6 +634,9 @@ footer a:hover {
 /* *** END OF ABOUT PAGE****** */
 
 /* ?beginning of single artwork page  */
+#single-artwork-page {
+  padding-top: var(--spacing-xxlarge);
+}
 #current-exhibition_hero {
   height: 100vh;
   padding-top: var(--spacing-xxlarge);
@@ -1044,6 +1054,7 @@ footer a:hover {
 .cards-wrapper {
   padding: 1rem;
   height: 50vh;
+  /* position: relative; */
 }
 .cards {
   width: 100%;
@@ -1065,29 +1076,56 @@ footer a:hover {
   height: 100%;
   object-fit: cover;
 }
-.--card-0 {
+.next-card {
+  background: none;
+  border: none;
+  color: var(--color-red);
+  transition: color 300ms var(--animation-easing);
+  position: absolute;
+  inset: 50% 0 auto auto;
+  transform: translateY(-50%);
+}
+.next-card:hover {
+  color: var(--color-blue);
+}
+.prev-card {
+  background: none;
+  border: none;
+  color: var(--color-red);
+  transition: color 300ms var(--animation-easing);
+  position: absolute;
+  inset: 50% auto auto 0;
+  transform: translateY(-50%);
+}
+.prev-card:hover {
+  color: var(--color-blue);
+}
+#exhibition-slider .container {
+  position: relative;
+}
+.is--card-0 {
   width: calc((var(--main-card-width) * 2));
   z-index: 2;
   left: 0;
 }
-.--card-1 {
+.is--card-1 {
   width: calc(var(--main-card-width) * 3);
   z-index: 3;
   left: calc(var(--main-card-width));
 }
-.--card-2 {
+.is--card-2 {
   width: calc(var(--main-card-width) * 2);
   left: calc(var(--main-card-width) * 3);
   z-index: 2;
 }
-.--card-3 {
+.is--card-3 {
   width: calc(var(--main-card-width) * 1);
   right: 0;
   z-index: 1;
 }
-.--card-4,
-.--card-5,
-.--card-6 {
+.is--card-4,
+.is--card-5,
+.is--card-6 {
   display: none;
 }
 
@@ -1117,37 +1155,37 @@ footer a:hover {
     box-shadow: 0px 5px 7px rgba(255, 0, 0, 0.1),
       0px 15px 25px rgba(255, 0, 0, 0.025), 0px 35px 30px rgba(255, 0, 0, 0.015);
   }
-  .--card-0 {
+  .is--card-0 {
     width: calc((var(--main-card-width) * 3));
     z-index: 3;
     left: 0;
   }
-  .--card-1 {
+  .is--card-1 {
     width: calc(var(--main-card-width) * 4);
     z-index: 4;
     left: calc(var(--main-card-width) * 1.5);
   }
-  .--card-2 {
+  .is--card-2 {
     width: calc(var(--main-card-width) * 5);
     left: calc(var(--main-card-width) * 3.5);
     z-index: 5;
   }
-  .--card-3 {
+  .is--card-3 {
     width: calc(var(--main-card-width) * 4);
     left: calc(var(--main-card-width) * 6.5);
     z-index: 4;
   }
-  .--card-4 {
+  .is--card-4 {
     width: calc((var(--main-card-width) * 3));
     left: calc(var(--main-card-width) * 9);
     z-index: 3;
   }
-  .--card-5 {
+  .is--card-5 {
     width: calc(var(--main-card-width) * 2);
     left: calc(var(--main-card-width) * 11);
     z-index: 2;
   }
-  .--card-6 {
+  .is--card-6 {
     width: calc(var(--main-card-width));
     right: 0;
     z-index: 1;
@@ -1156,7 +1194,7 @@ footer a:hover {
 
 /* ?End of exhibition slider */
 /* ?Utilities */
-.--display-none {
+.is--display-none {
   display: none;
 }
 /* ?End of utilities */
@@ -1253,7 +1291,7 @@ footer a:hover {
   margin: var(--spacing-small);
 }
 #container_news_contact h1 {
-  margin: --spacing-small;
+  margin: var(--spacing-small);
   border: solid #dd3123 4px;
   /* background-color; */
   margin: 10%;

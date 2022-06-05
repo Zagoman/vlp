@@ -23,5 +23,29 @@ const splide = new Splide(".splide", {
     },
   },
 });
+document.addEventListener("DOMContentLoaded", dataLoad);
+async function dataLoad() {
+  const response = await fetch("https://lucaszago.dk/vlp/wp-json/wp/v2/event");
+  const data = await response.json();
+  dataAppend(data);
+}
+function dataAppend(data) {
+  console.log(data);
+  const parent = document.querySelector(".splide__list");
+  data.forEach((el) => {
+    console.log(el);
+    el.images.forEach((ie) => {
+      console.log(ie.guid);
+      let liEl = document.createElement("li");
+      let imgEl = document.createElement("img");
 
-splide.mount();
+      liEl.classList.add("splide__slide");
+      imgEl.src = ie.guid;
+
+      liEl.append(imgEl);
+      parent.append(liEl);
+    });
+  });
+
+  splide.mount();
+}

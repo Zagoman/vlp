@@ -38,7 +38,7 @@ function showProduct(product) {
   ).textContent = `YEAR: ${product.year_created}`;
   document.querySelector("#text_single_art").textContent = product.description;
 
-  document.querySelector("img").src = product.images[0].guid;
+  // document.querySelector("img").src = product.images[0].guid;
   // copy
   //   .querySelector("a")
   //   .setAttribute("href", `single_artwork.html?id=${product.id}`);

@@ -30,8 +30,8 @@ class Slider {
         card.classList.add("card");
 
         i < this._cardsOnView
-          ? card.classList.add(`--card-${i}`)
-          : card.classList.add(`--display-none`);
+          ? card.classList.add(`is--card-${i}`)
+          : card.classList.add(`is--display-none`);
         this._parent.appendChild(card);
       }
     } else if (this._images.length < 7) {
@@ -43,8 +43,8 @@ class Slider {
           card.append(img);
           card.classList.add("card");
           i < this._cardsOnView
-            ? card.classList.add(`--card-${i}`)
-            : card.classList.add(`--display-none`);
+            ? card.classList.add(`is--card-${i}`)
+            : card.classList.add(`is--display-none`);
           this._parent.appendChild(card);
           counter++;
         } else {
@@ -52,8 +52,8 @@ class Slider {
           card.append(img);
           card.classList.add("card");
           i < this._cardsOnView
-            ? card.classList.add(`--card-${i}`)
-            : card.classList.add(`--display-none`);
+            ? card.classList.add(`is--card-${i}`)
+            : card.classList.add(`is--display-none`);
           this._parent.appendChild(card);
           counter++;
         }
@@ -73,16 +73,16 @@ class Slider {
     for (let i = 0; i < this._parent.children.length; i++) {
       let curChild = this._parent.children[i];
       if (i === 0) {
-        curChild.classList.add(`--display-none`);
-        curChild.classList.remove(`--card-${i}`);
+        curChild.classList.add(`is--display-none`);
+        curChild.classList.remove(`is--card-${i}`);
       }
       if (i === this._cardsOnView) {
-        curChild.classList.remove(`--display-none`);
-        curChild.classList.add(`--card-${this._cardsOnView - 1}`);
+        curChild.classList.remove(`is--display-none`);
+        curChild.classList.add(`is--card-${this._cardsOnView - 1}`);
       }
       if (i > 0 && i < this._cardsOnView) {
-        curChild.classList.add(`--card-${i - 1}`);
-        curChild.classList.remove(`--card-${i}`);
+        curChild.classList.add(`is--card-${i - 1}`);
+        curChild.classList.remove(`is--card-${i}`);
       }
     }
     let clone = this._parent.children[0].cloneNode(true);
@@ -95,16 +95,16 @@ class Slider {
     for (let i = 0; i < this._parent.children.length; i++) {
       let curChild = this._parent.children[i];
       if (i === this._parent.children.length - 1) {
-        curChild.classList.remove(`--display-none`);
-        curChild.classList.add(`--card-0`);
+        curChild.classList.remove(`is--display-none`);
+        curChild.classList.add(`is--card-0`);
       }
       if (i === this._cardsOnView - 1) {
-        curChild.classList.add(`--display-none`);
-        curChild.classList.remove(`--card-${this._cardsOnView - 1}`);
+        curChild.classList.add(`is--display-none`);
+        curChild.classList.remove(`is--card-${this._cardsOnView - 1}`);
       }
       if (i >= 0 && i < this._cardsOnView - 1) {
-        curChild.classList.add(`--card-${i + 1}`);
-        curChild.classList.remove(`--card-${i}`);
+        curChild.classList.add(`is--card-${i + 1}`);
+        curChild.classList.remove(`is--card-${i}`);
       }
     }
     let clone =
