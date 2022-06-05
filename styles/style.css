@@ -205,6 +205,41 @@ p {
   line-height: 1;
 }
 /* ?end of Typography */
+
+/* ***PRELOADER starts */
+.loader {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+.preloader-img {
+  max-width: 100%;
+  width: 50vw;
+  margin: auto;
+}
+/* .disappear {
+  opacity: 0;
+  visibility: hidden;
+} */
+#deletethis {
+  opacity: 0;
+  pointer-events: none;
+}
+.pulsate {
+  animation: pulsate 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+/* ***PRELOADER ENDS**** */
 /* ?Video Interaction on Hero */
 #video-canvas {
   width: 100%;
@@ -1417,5 +1452,15 @@ iframe[title="google-maps"] {
 @media only screen and (min-width: 800px) {
   .artworks_grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(0.3);
+    filter: blur(4px);
+    filter: invert(50%) sepia(100%) saturate(4) hue-rotate(30deg);
+  }
+  100% {
+    transform: scale(0.7);
   }
 }
