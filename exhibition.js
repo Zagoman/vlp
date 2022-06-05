@@ -50,7 +50,11 @@ class Exhibition {
     exhibitionDocumentation.textContent = exhibition["documentation"];
     exhibitionConsultation.textContent = exhibition["consultation"];
 
-    // console.log(exhibition.artists.split(/\(.*?\)|(,)/));
+    exhibition.artists.split("/").forEach((el) => {
+      let li = document.createElement("li");
+      li.textContent = el;
+      exhibitionArtists.append(li);
+    });
   }
 
   _ShowPastExhibitions(exhibition) {

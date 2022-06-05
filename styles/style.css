@@ -701,6 +701,9 @@ footer a:hover {
   list-style-type: disc;
   padding-left: var(--spacing-medium);
 }
+.general-info {
+  padding-top: 2.3rem;
+}
 .general-info span {
   display: block;
   margin-bottom: var(--spacing-small);
