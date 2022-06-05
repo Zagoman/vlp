@@ -1421,3 +1421,43 @@ iframe[title="google-maps"] {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ?Official Pre-loader */
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0 0 0 0;
+  background-color: var(--color-off-white);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 800ms linear;
+}
+.preloader.preloader--hide {
+  opacity: 0;
+}
+.preloader img {
+  animation: pulsate 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  width: 20vw;
+}
+.overflow--hidden {
+  overflow: hidden;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.8);
+    filter: blur(4px);
+    filter: invert(50%) sepia(100%) saturate(4) hue-rotate(30deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* ?Official pre-loader ends */
