@@ -1403,6 +1403,7 @@ iframe[title="google-maps"] {
 #artworks_title_wrapper {
   text-align: center;
   color: var(--color-red);
+  margin-bottom: 3em;
 }
 #artworks_piece_name {
   font-weight: 600;
