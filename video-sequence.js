@@ -12,7 +12,9 @@ const pages = {
 
 let canvas;
 let video;
-let videoSrcs = ["1_video.mp4"];
+let videoSrcs = [
+  ["./media/1_video.webm", "./media/1_video.mp4", "./media/1_video.mov"],
+];
 let curId = 0;
 let aspectRatio = 16 / 9;
 
@@ -20,10 +22,14 @@ function setup() {
   canvas = createCanvas(window.innerWidth, window.innerHeight);
   canvas.parent(parent);
   background(110);
-  video = createVideo("./media/" + videoSrcs[0], vidGo);
+  video = createVideo(videoSrcs[0], vidGo);
   video.size(width, height);
   for (let i = 2; i <= 7; i++) {
-    videoSrcs.push(`${i}_video.mp4`);
+    videoSrcs.push([
+      `./media/${i}_video.webm`,
+      `./media/${i}_video.mp4`,
+      `./media/${i}_video.mov`,
+    ]);
   }
   imageMode(CENTER);
   video.hide();
@@ -41,7 +47,7 @@ function vidLoad() {
   // video.size(window.innerWidth, window.innerHeight);
   video.size(width, height);
   video.mute = true;
-  if (!video.src.includes(videoSrcs[1])) {
+  if (!video.src.includes("2_video")) {
     video.volume(0);
     video.loop();
   } else {
@@ -59,7 +65,7 @@ function nexVid() {
     curId = 2;
   }
   video.remove();
-  video = createVideo("./media/" + videoSrcs[curId], vidLoad);
+  video = createVideo(videoSrcs[curId], vidLoad);
   video.hide();
   console.log(video.elt.classList);
   updateUI();
@@ -72,7 +78,7 @@ function prevVid() {
     curId = 6;
   }
   video.remove();
-  video = createVideo(`./media/` + videoSrcs[curId], vidLoad);
+  video = createVideo(videoSrcs[curId], vidLoad);
   video.hide();
   updateUI();
 }
