@@ -21,7 +21,7 @@ class Slider {
 
   _Init() {
     let counter = 0;
-    if (this._images.length >= 7) {
+    if (this._images.length > 7) {
       for (let i = 0; i < this._images.length; i++) {
         let card = document.createElement("div");
         let img = document.createElement("img");
