@@ -24,6 +24,7 @@ function setup() {
   background(110);
   video = createVideo(videoSrcs[0], vidGo);
   video.size(width, height);
+  video.pause();
   for (let i = 2; i <= 7; i++) {
     videoSrcs.push([
       `./media/${i}_video.webm`,
@@ -51,7 +52,7 @@ function vidLoad() {
     video.volume(0);
     video.loop();
   } else {
-    video.pause();
+    // video.pause();
     video.play();
     video.onended(nexVid);
   }
