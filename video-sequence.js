@@ -87,19 +87,19 @@ function updateUI() {
   switch (curId) {
     case 0:
       // btnEnter.href = pages.home
-      btnPrev.classList.add("--display-none");
-      btnNext.classList.add("--display-none");
+      btnPrev.classList.add("is--display-none");
+      btnNext.classList.add("is--display-none");
       btnEnter.addEventListener("click", nexVid);
       break;
     case 1:
       btnEnter.removeEventListener("click", nexVid, false);
-      btnEnter.classList.add("--display-none");
+      btnEnter.classList.add("is--display-none");
       break;
     case 2:
-      if (btnPrev.classList.contains("--display-none")) {
-        btnPrev.classList.remove("--display-none");
-        btnNext.classList.remove("--display-none");
-        btnEnter.classList.remove("--display-none");
+      if (btnPrev.classList.contains("is--display-none")) {
+        btnPrev.classList.remove("is--display-none");
+        btnNext.classList.remove("is--display-none");
+        btnEnter.classList.remove("is--display-none");
       }
       btnEnter.href = pages.about;
       btnEnter.textContent = "Enter About";
