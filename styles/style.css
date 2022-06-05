@@ -701,6 +701,9 @@ footer a:hover {
   list-style-type: disc;
   padding-left: var(--spacing-medium);
 }
+.general-info {
+  padding-top: 2.3rem;
+}
 .general-info span {
   display: block;
   margin-bottom: var(--spacing-small);
@@ -1404,6 +1407,7 @@ iframe[title="google-maps"] {
   text-align: center;
   color: var(--color-red);
   margin-bottom: 3em;
+  margin-top: 6em;
 }
 #artworks_piece_name {
   font-weight: 600;

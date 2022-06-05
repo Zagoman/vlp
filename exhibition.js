@@ -5,6 +5,7 @@ class Exhibition {
   constructor(exhibitionData, eventsData) {
     this._exhibitionData = exhibitionData;
     this._eventsData = eventsData;
+    this._exhibitionImages = [];
     this._Init();
   }
 
@@ -17,6 +18,7 @@ class Exhibition {
       }
     });
     hideLoader();
+    this._ShowSlider();
 
     this._eventsData.forEach((event) => this._ShowEvents(event));
   }
@@ -50,7 +52,18 @@ class Exhibition {
     exhibitionDocumentation.textContent = exhibition["documentation"];
     exhibitionConsultation.textContent = exhibition["consultation"];
 
-    // console.log(exhibition.artists.split(/\(.*?\)|(,)/));
+    exhibition.artists.split("/").forEach((el) => {
+      let li = document.createElement("li");
+      li.textContent = el;
+      exhibitionArtists.append(li);
+    });
+
+    this._exhibitionImages.push(exhibition.thumbnail.guid);
+    console.log(exhibition.images);
+    exhibition.images.forEach((item) => {
+      this._exhibitionImages.push(item.guid);
+    });
+    console.log(this._exhibitionImages);
   }
 
   _ShowPastExhibitions(exhibition) {
@@ -81,6 +94,22 @@ class Exhibition {
     eventDescription.textContent = event["short-description"];
 
     parent.append(clone);
+  }
+
+  _ShowSlider() {
+    let slider = new Slider(".cards", this._exhibitionImages);
+
+    let btnNext = document.querySelector(".next-card");
+    let btnPrev = document.querySelector(".prev-card");
+    btnNext.addEventListener("click", () => {
+      slider._NextCard();
+    });
+    btnPrev.addEventListener("click", () => {
+      slider._PrevCard();
+    });
+    window.addEventListener("resize", () => {
+      slider._UpdateView();
+    });
   }
 }
 

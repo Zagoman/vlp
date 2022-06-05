@@ -11,8 +11,8 @@
 */
 
 class Slider {
-  constructor(parent) {
-    this._images = [];
+  constructor(parent, images) {
+    this._images = images;
     this._parent = document.querySelector(parent);
     this._cardsOnView = 0;
     this._UpdateView();
@@ -20,18 +20,44 @@ class Slider {
   }
 
   _Init() {
-    for (let i = 0; i < 10; i++) {
-      let card = document.createElement("div");
-      let img = document.createElement("img");
-      this._images.push(`./media/logo_${i}.png`);
-      img.src = this._images[i];
-      card.append(img);
-      card.classList.add("card");
+    let counter = 0;
+    if (this._images.length > 7) {
+      for (let i = 0; i < this._images.length; i++) {
+        let card = document.createElement("div");
+        let img = document.createElement("img");
+        img.src = this._images[i];
+        card.append(img);
+        card.classList.add("card");
 
-      i < this._cardsOnView
-        ? card.classList.add(`--card-${i}`)
-        : card.classList.add(`--display-none`);
-      this._parent.appendChild(card);
+        i < this._cardsOnView
+          ? card.classList.add(`--card-${i}`)
+          : card.classList.add(`--display-none`);
+        this._parent.appendChild(card);
+      }
+    } else if (this._images.length < 7) {
+      for (let i = 0; i < 8; i++) {
+        let card = document.createElement("div");
+        let img = document.createElement("img");
+        if (this._images[i]) {
+          img.src = this._images[i];
+          card.append(img);
+          card.classList.add("card");
+          i < this._cardsOnView
+            ? card.classList.add(`--card-${i}`)
+            : card.classList.add(`--display-none`);
+          this._parent.appendChild(card);
+          counter++;
+        } else {
+          img.src = this._images[i - counter];
+          card.append(img);
+          card.classList.add("card");
+          i < this._cardsOnView
+            ? card.classList.add(`--card-${i}`)
+            : card.classList.add(`--display-none`);
+          this._parent.appendChild(card);
+          counter++;
+        }
+      }
     }
   }
 
@@ -94,19 +120,3 @@ class Slider {
     return document.querySelector(parent);
   }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const slider = new Slider(".cards");
-
-  const btnNext = document.querySelector(".next-card");
-  const btnPrev = document.querySelector(".prev-card");
-  btnNext.addEventListener("click", () => {
-    slider._NextCard();
-  });
-  btnPrev.addEventListener("click", () => {
-    slider._PrevCard();
-  });
-  window.addEventListener("resize", () => {
-    slider._UpdateView();
-  });
-});
