@@ -118,7 +118,7 @@
     --main-card-width: 7.4%;
   }
   body {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 * {
@@ -552,6 +552,9 @@ footer a:hover {
 #about_team-section {
   padding-top: var(--spacing-xxxlarge);
 }
+#about_team-section h1 {
+  color: var(--color-red);
+}
 @media only screen and (min-width: 599px) {
   .logoCloud {
     justify-content: center;
@@ -932,8 +935,10 @@ footer a:hover {
   text-align: center;
   min-width: 100%;
 }
+
 .ctaBody {
   padding-top: 2em;
+  min-width: 100%;
   padding-bottom: 0.5em;
   color: var(--color-secondary);
   font-family: "Poppins", sans-serif;
@@ -942,8 +947,9 @@ footer a:hover {
   text-transform: uppercase;
   text-align: center;
 }
+
 .signupForm-content {
-  margin: var(--spacing-medium);
+  margin: var(--spacing-small);
 }
 .signupForm {
   padding: var(--spacing-small);
@@ -977,7 +983,8 @@ footer a:hover {
   border-radius: 50px;
   border: var(--color-primary) solid 2px;
   height: 4rem;
-  transition: 0.15s ease-in-out;
+  transition: 200ms ease-in-out;
+  width: 100%;
 }
 #mc-embedded-subscribe:hover {
   border: 2.5px solid var(--color-secondary);
@@ -985,6 +992,11 @@ footer a:hover {
 
 #mc-embedded-subscribe:active {
   transform: scale(0.96);
+}
+.clear,
+.foot {
+  display: flex;
+  justify-content: center;
 }
 #mce-EMAIL {
   transition: ease-in-out 0.2s;
@@ -1011,13 +1023,20 @@ footer a:hover {
 .signupForm input {
   width: 100%;
 }
+.button-contact:hover {
+  --color-red: #a92519;
+}
 
-@media only screen and (min-width: 799px) {
-  .signupImage {
-    display: block;
+@media only screen and (min-width: 499px) {
+  #mc-embedded-subscribe {
+    width: 50%;
+  }
+  .signupForm-content {
+    margin: var(--spacing-medium);
   }
 }
 /* ?End of sign-up form  */
+
 /* ?Exhibition-slider */
 .cards-wrapper {
   padding: 1rem;
@@ -1256,7 +1275,7 @@ footer a:hover {
   margin-right: 10%;
 }
 #map_contact {
-  margin: 10%;
+  margin: 6%;
 }
 iframe[title="google-maps"] {
   width: 100%;
@@ -1278,106 +1297,7 @@ iframe[title="google-maps"] {
     aspect-ratio: 4/3;
   }
 }
-/* ***Beginning of sign-up form ****** */
-.signupContainer {
-  margin-inline: auto;
-}
-.ctaHeader {
-  color: #dd3123;
-  font-size: var(--font-xxlarge);
-  font-family: "Clash Grotesk", sans-serif;
-  font-weight: 600;
-}
-.ctaBody {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  color: var(--color-secondary);
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-}
-.signupForm-content {
-  margin-top: 1.5em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  padding-bottom: 1.5em;
-}
-.signupForm {
-  grid-column: 1 / 7;
-  height: fit-content;
-  background-color: #000;
-  border: solid 4px #dd3123;
-}
-.signupForm input {
-  margin-bottom: 5%;
-  height: 3rem;
-  width: 100%;
-  border: solid 3px #dd3123;
-  font-family: "Poppins", sans-serif;
-}
-.container-button-contact {
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-.button-contact {
-  position: relative;
-  /* inset: auto 50% 10vh auto; */
-  /* transform: translateX(50%); */
-  padding: 1rem 3rem;
-  margin: auto;
-  background-color: #dd3123;
-  font-family: var(--font-family_secondary);
-  font-size: var(--font-large);
-  font-weight: 800;
-  text-transform: uppercase;
-  color: var(--color-secondary);
-  text-shadow: 3px 3px 0px var(--color-primary);
-  -webkit-text-stroke: 1px var(--color-primary);
-  text-decoration: none;
-  border-radius: 50px;
-  transition: background-color 300ms var(--animation-easing);
-}
-.button-contact:hover {
-  --color-red: #a92519;
-}
-.emailFlex {
-  display: flex;
-  flex-direction: column;
-}
-.signupImage {
-  display: none;
-  height: 100%;
-  max-width: 100%;
-  grid-column: 7 / 12;
-}
-#signupBtn {
-  background-image: url("/media/signUpBtn-01.svg");
-  background-repeat: no-repeat;
-  width: 50%;
-  height: 10%;
-  cursor: pointer;
-  display: block;
-}
-@media only screen and (min-width: 485px) {
-  .signupForm input {
-    width: 100%;
-  }
-  /*   #signupBtn {
-    width: 40%;
-    justify-items: flex-end;
-  }
-  .emailFlex {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-  } */
-}
-@media only screen and (min-width: 799px) {
-  .signupImage {
-    display: block;
-  }
-}
-/* End of sign-up form  */
+
 /* ? end of contact page */
 /* ?Beginning of Marquee */
 .marquee-wrapper {
@@ -1483,6 +1403,7 @@ iframe[title="google-maps"] {
 #artworks_title_wrapper {
   text-align: center;
   color: var(--color-red);
+  margin-bottom: 3em;
 }
 #artworks_piece_name {
   font-weight: 600;
@@ -1499,3 +1420,43 @@ iframe[title="google-maps"] {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ?Official Pre-loader */
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0 0 0 0;
+  background-color: var(--color-off-white);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 800ms linear;
+}
+.preloader.preloader--hide {
+  opacity: 0;
+}
+.preloader img {
+  animation: pulsate 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  width: 20vw;
+}
+.overflow--hidden {
+  overflow: hidden;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.8);
+    filter: blur(4px);
+    filter: invert(50%) sepia(100%) saturate(4) hue-rotate(30deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* ?Official pre-loader ends */

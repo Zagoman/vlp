@@ -1,3 +1,4 @@
+window.addEventListener("DOMContentLoaded", hideLoader);
 const findTitle = document.querySelector("#find-title");
 const findMarquee1 = document.querySelector("#find-marquee1");
 const findMarquee2 = document.querySelector("#find-marquee2");

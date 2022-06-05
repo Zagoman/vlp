@@ -12,6 +12,7 @@ fetch(url)
   .then((data) => {
     console.log(data);
     data.forEach(showProduct);
+    hideLoader();
   })
   .catch((e) => {
     console.error("An error occured:", e.message);

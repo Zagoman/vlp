@@ -35,6 +35,7 @@
       <section id="current-exhibition_hero">
         <div class="container">
           <span class="label">Current exhibition</span>
+          <span class="on-view"></span>
           <h1 class="exhibition-title">Tak Tak</h1>
           <span class="exhibition-dates">12.05 - 27.05 2022</span>
         </div>
@@ -97,63 +98,12 @@
       <section id="past-exhibitions">
         <div class="container">
           <h2>Past exhibitions and Events</h2>
-          <article>
-            <div class="left-content">
-              <img src="" alt="" class="exhibition-img" />
-              <h3>{{Exhibition 1}}</h3>
-              <span class="exhibition-date">12.11 - 13.12 2021</span>
-            </div>
-            <div class="right-content">
-              <p class="exhibition-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                eveniet eligendi, suscipit eius inventore molestias? Doloribus
-                corporis deleniti accusamus nemo exercitationem voluptatum, iure
-                atque animi, perspiciatis molestiae dolore aspernatur et
-                molestias. Voluptates, magni consequuntur. Adipisci illum
-                architecto nihil, tenetur corporis totam voluptatibus et, ex
-                beatae autem iure! Reiciendis adipisci neque dolorem labore,
-                molestias eligendi recusandae optio cupiditate tempora dolores
-                maiores veritatis hic voluptatum id ea? Ut beatae illum ipsa
-                quia ab doloremque ducimus, vero illo ea expedita magnam placeat
-                officiis, nobis ipsam dolore quam nostrum, natus dolorum!
-                Laudantium, omnis modi voluptatibus maiores aspernatur veniam
-                consectetur praesentium autem unde a? Repudiandae est, eos
-                inventore expedita placeat voluptatibus consequatur sed,
-                sapiente optio ipsa asperiores minima. Fuga animi minima, porro
-                necessitatibus praesentium reiciendis?
-              </p>
-            </div>
-          </article>
+        
         </div>
       </section>
       <section id="past-events">
         <div class="container">
-          <article>
-            <div class="right-content">
-              <h3>TAK TAK Finissage</h3>
-              <img src="" alt="" class="past-events-img" />
-              <span class="event-date">13.05 2022</span>
-            </div>
-            <div class="left-content">
-              <p class="event-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                blanditiis minus ipsam, deleniti dolorem obcaecati nemo?
-                Quibusdam, itaque esse veniam possimus nobis eum, repudiandae
-                ipsam alias doloremque quae eos impedit quo error numquam
-                tempora expedita ratione nam veritatis vel voluptatem
-                recusandae. Deserunt rerum libero eligendi recusandae, sequi
-                dicta et aliquid voluptatibus nisi, quod, consequuntur
-                blanditiis provident! Provident, magni enim ea ex omnis dolorem,
-                nemo impedit aut ullam ipsa esse exercitationem quidem!
-                Voluptatem veniam molestiae rem. Dicta qui sint esse minus
-                veniam explicabo ducimus rerum aliquam omnis ut odio ad culpa
-                quibusdam officia, vitae, placeat error? Repellat in,
-                consectetur eius eaque est placeat aut. Nesciunt hic, adipisci
-                sed ipsum accusantium dolores, temporibus obcaecati itaque
-                numquam quasi, voluptas expedita in inventore vel.
-              </p>
-            </div>
-          </article>
+          
         </div>
       </section>
       <section class="signupContainer container">
@@ -183,7 +133,7 @@
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ee084c4c93715bc2250b91eff_d376a00037" tabindex="-1" value=""></div>
         <div class="optionalParent">
             <div class="clear foot">
-                <input type="button"alt="sign up button" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+                <input type="button"alt="sign up button" value="Sign up" name="subscribe" id="mc-embedded-subscribe">
             </div>
 
         </div>
@@ -226,15 +176,15 @@
         <div id="footer-SoMe">
           <div>
             <div class="footer-SoMe-container">
-              <img src="/media/logo_fb.svg" alt="logo of Facebook" />
+              <img src="./media/logo_fb.svg" alt="logo of Facebook" />
               <p>Follow us on <a href="#">Facebook</a></p>
             </div>
             <div class="footer-SoMe-container">
-              <img src="/media/logo_IG.svg" alt="logo of Instagram" />
+              <img src="./media/logo_IG.svg" alt="logo of Instagram" />
               <p>Follow us on <a href="#">Instagram</a></p>
             </div>
             <div class="footer-SoMe-container">
-              <img src="/media/logo_mail.svg" alt="logo of a letter" />
+              <img src="./media/logo_mail.svg" alt="logo of a letter" />
               <p>Sign up to the <a href="#">Newsletter</a></p>
             </div>
           </div>
@@ -245,7 +195,66 @@
         <p id="footer-cvr">CVR: 12345678</p>
       </div>
     </footer>
+    <template id="temp-events">
+      <article>
+        <div class="right-content">
+          <h3 class="event-title">TAK TAK Finissage</h3>
+          <img src="" alt="" class="past-events-img" />
+          <span class="event-date">13.05 2022</span>
+        </div>
+        <div class="left-content">
+          <p class="event-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+            blanditiis minus ipsam, deleniti dolorem obcaecati nemo?
+            Quibusdam, itaque esse veniam possimus nobis eum, repudiandae
+            ipsam alias doloremque quae eos impedit quo error numquam
+            tempora expedita ratione nam veritatis vel voluptatem
+            recusandae. Deserunt rerum libero eligendi recusandae, sequi
+            dicta et aliquid voluptatibus nisi, quod, consequuntur
+            blanditiis provident! Provident, magni enim ea ex omnis dolorem,
+            nemo impedit aut ullam ipsa esse exercitationem quidem!
+            Voluptatem veniam molestiae rem. Dicta qui sint esse minus
+            veniam explicabo ducimus rerum aliquam omnis ut odio ad culpa
+            quibusdam officia, vitae, placeat error? Repellat in,
+            consectetur eius eaque est placeat aut. Nesciunt hic, adipisci
+            sed ipsum accusantium dolores, temporibus obcaecati itaque
+            numquam quasi, voluptas expedita in inventore vel.
+          </p>
+        </div>
+      </article>
+    </template>
+    <template id="temp-exhibitions">
+      <article>
+        <div class="left-content">
+          <img src="" alt="" class="exhibition-img" />
+          <h3 class="past-title">{{Exhibition 1}}</h3>
+          <span class="exhibition-date">12.11 - 13.12 2021</span>
+        </div>
+        <div class="right-content">
+          <p class="exhibition-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            eveniet eligendi, suscipit eius inventore molestias? Doloribus
+            corporis deleniti accusamus nemo exercitationem voluptatum, iure
+            atque animi, perspiciatis molestiae dolore aspernatur et
+            molestias. Voluptates, magni consequuntur. Adipisci illum
+            architecto nihil, tenetur corporis totam voluptatibus et, ex
+            beatae autem iure! Reiciendis adipisci neque dolorem labore,
+            molestias eligendi recusandae optio cupiditate tempora dolores
+            maiores veritatis hic voluptatum id ea? Ut beatae illum ipsa
+            quia ab doloremque ducimus, vero illo ea expedita magnam placeat
+            officiis, nobis ipsam dolore quam nostrum, natus dolorum!
+            Laudantium, omnis modi voluptatibus maiores aspernatur veniam
+            consectetur praesentium autem unde a? Repudiandae est, eos
+            inventore expedita placeat voluptatibus consequatur sed,
+            sapiente optio ipsa asperiores minima. Fuga animi minima, porro
+            necessitatibus praesentium reiciendis?
+          </p>
+        </div>
+      </article>
+    </template>
+    <script src="Loader.js"></script>
     <script src="script-burger.js"></script>
     <script src="./slider.js"></script>
+    <script src="./exhibition.js"></script>
   </body>
 </html>

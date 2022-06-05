@@ -20,7 +20,7 @@ function setup() {
   canvas = createCanvas(window.innerWidth, window.innerHeight);
   canvas.parent(parent);
   background(110);
-  video = createVideo("./media/" + videoSrcs[0], vidLoad);
+  video = createVideo("./media/" + videoSrcs[0], vidGo);
   video.size(width, height);
   for (let i = 2; i <= 7; i++) {
     videoSrcs.push(`${i}_video.mp4`);
@@ -33,7 +33,10 @@ function setup() {
 function draw() {
   image(video, width / 2, height / 2, innerHeight * aspectRatio, innerHeight);
 }
-
+function vidGo() {
+  hideLoader();
+  vidLoad();
+}
 function vidLoad() {
   // video.size(window.innerWidth, window.innerHeight);
   video.size(width, height);

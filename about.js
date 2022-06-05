@@ -1,3 +1,4 @@
+window.addEventListener("DOMContentLoaded", hideLoader);
 const team = document.querySelector("#theteam-title");
 const teammarquee1 = document.querySelector("#theteam-marquee");
 const teammarquee2 = document.querySelector("#theteam-marquee2");
