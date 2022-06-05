@@ -1419,3 +1419,24 @@ iframe[title="google-maps"] {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ?Official Pre-loader */
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0 0 0 0;
+  background-color: var(--color-off-white);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 800ms linear;
+}
+.preloader.preloader--hide {
+  opacity: 0;
+}
+.overflow--hidden {
+  overflow: hidden;
+}
+/* ?Official pre-loader ends */
