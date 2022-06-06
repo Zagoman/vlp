@@ -29,13 +29,20 @@ async function dataLoad() {
   const data = await response.json();
   dataAppend(data);
 }
+async function dataLoad() {
+  const response = await fetch("https://lucaszago.dk/vlp/wp-json/wp/v2/event");
+  const data = await response.json();
+  const responseEx = await fetch(
+    "https://lucaszago.dk/vlp/wp-json/wp/v2/exhibitions"
+  );
+  const dataEx = await responseEx.json();
+  dataAppend(data);
+  exhibitionAppend(dataEx);
+}
 function dataAppend(data) {
-  console.log(data);
   const parent = document.querySelector(".splide__list");
   data.forEach((el) => {
-    console.log(el);
     el.images.forEach((ie) => {
-      console.log(ie.guid);
       let liEl = document.createElement("li");
       let imgEl = document.createElement("img");
 
@@ -48,4 +55,26 @@ function dataAppend(data) {
   });
 
   splide.mount();
+}
+
+function exhibitionAppend(data) {
+  let bool = false;
+  const parent = document.querySelector(".exhibition-wrapper");
+  const temp = document.querySelector("#curExTemp").content;
+  const clone = temp.cloneNode(true);
+  data.forEach((el) => {
+    if (Number(el["on-view"])) {
+      clone.querySelector("h2").textContent = el.title.rendered;
+      clone.querySelector(".curated-tag").textContent = el["curated_by"];
+      clone.querySelector(
+        ".view-dates"
+      ).textContent = `${el["start-date"]} - ${el["end-date"]}`;
+
+      parent.append(clone);
+      bool = true;
+    }
+  });
+  if (!bool) {
+    document.querySelector("#curExhibition").remove();
+  }
 }
