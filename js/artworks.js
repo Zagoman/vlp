@@ -10,7 +10,6 @@ fetch(url)
     return response.json();
   })
   .then((data) => {
-    console.log(data);
     data.forEach(showProduct);
     hideLoader();
   })

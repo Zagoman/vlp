@@ -55,7 +55,6 @@ function vidLoad() {
     video.onended(nexVid);
   }
   video.elt.classList.add("placeholder-video");
-  console.log(video.elt.classList);
 }
 
 function nexVid() {
@@ -67,7 +66,6 @@ function nexVid() {
   video.remove();
   video = createVideo(videoSrcs[curId], vidLoad);
   video.hide();
-  console.log(video.elt.classList);
   updateUI();
 }
 
