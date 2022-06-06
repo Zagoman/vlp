@@ -227,7 +227,7 @@ p {
   border: none;
   z-index: 10;
   transform: translateY(-50%);
-  transition: color 200ms ease-in-out;
+  transition: color 300ms var(--animation-easing);
   cursor: pointer;
   transform: translateY(-50%);
 }
@@ -660,6 +660,12 @@ footer a:hover {
   letter-spacing: 0.15em;
   max-width: 10ch;
 }
+#current-exhibition_hero .on-view {
+  color: var(--color-secondary);
+  font-size: var(--font-medium);
+  text-shadow: 1px 1px var(--color-primary);
+  /* -webkit-text-stroke: 1px var(--color-primary); */
+}
 .exhibition-title {
   font-size: var(--font-largest);
   color: var(--color-secondary);
@@ -759,6 +765,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-medium);
+    margin-bottom: var(--spacing-xlarge);
   }
   #past-events .right-content {
     order: 1;
