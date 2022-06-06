@@ -1069,7 +1069,6 @@ footer a:hover {
   position: relative;
 }
 .card {
-  border: 1px solid var(--color-primary);
   position: absolute;
   top: 50%;
   aspect-ratio: 7/8;
@@ -1079,6 +1078,7 @@ footer a:hover {
     width 200ms var(--animation-easing), z-index 100ms var(--animation-easing);
 }
 .card img {
+  border: 1px solid var(--color-primary);
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1147,21 +1147,14 @@ footer a:hover {
     position: relative;
   }
   .card {
-    border: 1px solid var(--color-primary);
     position: absolute;
     top: 50%;
     right: auto;
     display: block;
     perspective: 1000px;
     transform: translateY(-50%) scale(1) rotateY(0deg);
+  }
 
-    cursor: pointer;
-  }
-  .card:hover {
-    transform: translateY(-50%) scale(1.02) rotateY(30deg);
-    box-shadow: 0px 5px 7px rgba(255, 0, 0, 0.1),
-      0px 15px 25px rgba(255, 0, 0, 0.025), 0px 35px 30px rgba(255, 0, 0, 0.015);
-  }
   .is--card-0 {
     width: calc((var(--main-card-width) * 3));
     z-index: 3;
