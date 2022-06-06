@@ -35,12 +35,9 @@ async function dataLoad() {
   exhibitionAppend(dataEx);
 }
 function dataAppend(data) {
-  console.log(data);
   const parent = document.querySelector(".splide__list");
   data.forEach((el) => {
-    console.log(el);
     el.images.forEach((ie) => {
-      console.log(ie.guid);
       let liEl = document.createElement("li");
       let imgEl = document.createElement("img");
 

@@ -59,11 +59,9 @@ class Exhibition {
     });
 
     this._exhibitionImages.push(exhibition.thumbnail.guid);
-    console.log(exhibition.images);
     exhibition.images.forEach((item) => {
       this._exhibitionImages.push(item.guid);
     });
-    console.log(this._exhibitionImages);
   }
 
   _ShowPastExhibitions(exhibition) {
