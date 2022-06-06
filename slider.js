@@ -115,8 +115,4 @@ class Slider {
     document.querySelector("html").offsetHeight;
     this._parent.prepend(clone);
   }
-
-  _FindParent(parent) {
-    return document.querySelector(parent);
-  }
 }

@@ -5,7 +5,7 @@ const parent = document.querySelector(".hero-section");
 const pages = {
   home: "./index.html",
   about: "./about.html",
-  exhibitions: "./exhibitions.html",
+  exhibitions: "./exhibition.html",
   contact: "./contact.html",
   artworks: "./artworks.html",
 };
